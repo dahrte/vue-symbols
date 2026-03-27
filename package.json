@@ -1,0 +1,17 @@
+{
+  "name": "vue-symbols",
+  "private": true,
+  "scripts": {
+    "build": "vp run -r build",
+    "check": "vp check",
+    "fix": "vp check --fix"
+  },
+  "devDependencies": {
+    "@types/node": "25.5.0",
+    "vite-plus": "0.1.14"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "packageManager": "pnpm@10.33.0"
+}

@@ -1,0 +1,27 @@
+# Logs
+npm-debug.log_
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Caches
+.cache
+
+# Dependency directories
+node_modules/
+
+# dotenv environment variable files
+.env
+.env.production
+
+# Nuxt.js build / generate output
+.nuxt/
+.output/
+.data/
+dist
+
+# Finder (MacOS) folder config
+.DS_Store
+
+# AI agent worktrees
+.claude/worktrees/
