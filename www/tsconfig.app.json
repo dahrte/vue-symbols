@@ -14,5 +14,5 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["vue.d.ts", "src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
+  "include": ["typed-router.d.ts", "src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
