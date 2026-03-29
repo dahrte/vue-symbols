@@ -1,4 +1,3 @@
-import vue from 'unplugin-vue/rolldown'
 import { defineConfig } from 'vite-plus'
 
 export default defineConfig({
@@ -18,7 +17,6 @@ export default defineConfig({
       devExports: true,
     },
     platform: 'neutral',
-    plugins: [vue({ isProduction: true })],
     treeshake: true,
   },
 })

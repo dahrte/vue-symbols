@@ -1,2 +1,2 @@
-export { default as FileIcon } from './utils/FileIcon.vue'
-export { default as FolderIcon } from './utils/FolderIcon.vue'
+export { default as FileIcon, type FileIconProps } from './utils/FileIcon'
+export { default as FolderIcon, type FolderIconProps } from './utils/FolderIcon'

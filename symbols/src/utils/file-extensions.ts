@@ -35,41 +35,41 @@ const fileExtensions: IconMap = {
   edn: VueSymbol.Clojure,
 
   // CMake
-  cmake: VueSymbol.Cmake,
+  cmake: VueSymbol.CMake,
 
   // CoffeeScript
-  coffee: VueSymbol.Coffeescript,
-  litcoffee: VueSymbol.Coffeescript,
+  coffee: VueSymbol.CoffeeScript,
+  litcoffee: VueSymbol.CoffeeScript,
 
   // ColdFusion
-  cfm: VueSymbol.Coldfusion,
-  cfc: VueSymbol.Coldfusion,
+  cfm: VueSymbol.ColdFusion,
+  cfc: VueSymbol.ColdFusion,
 
   // Compressed
   zip: VueSymbol.Zip,
 
   // C++
-  cpp: VueSymbol.Cplus,
-  cc: VueSymbol.Cplus,
-  cxx: VueSymbol.Cplus,
+  cpp: VueSymbol.CPlusPlus,
+  cc: VueSymbol.CPlusPlus,
+  cxx: VueSymbol.CPlusPlus,
 
   // Crystal
   cr: VueSymbol.Crystal,
 
   // C#
-  cs: VueSymbol.Csharp,
-  csx: VueSymbol.Csharp,
+  cs: VueSymbol.CSharp,
+  csx: VueSymbol.CSharp,
 
   // CSV
-  csv: VueSymbol.Csv,
-  tsv: VueSymbol.Csv,
+  csv: VueSymbol.CSV,
+  tsv: VueSymbol.CSV,
 
   // Cucumber
   feature: VueSymbol.Cucumber,
 
   // CUDA
-  cu: VueSymbol.Cuda,
-  cuh: VueSymbol.Cuda,
+  cu: VueSymbol.CUDA,
+  cuh: VueSymbol.CUDA,
 
   // Dart
   dart: VueSymbol.Dart,
@@ -87,14 +87,14 @@ const fileExtensions: IconMap = {
   rtf: VueSymbol.Document,
 
   // Draw.io
-  drawio: VueSymbol.Drawio,
-  'drawio.svg': VueSymbol.Drawio,
-  'drawio.png': VueSymbol.Drawio,
+  drawio: VueSymbol.DrawIO,
+  'drawio.svg': VueSymbol.DrawIO,
+  'drawio.png': VueSymbol.DrawIO,
 
   // TypeScript declarations
-  'd.ts': VueSymbol.Dts,
-  'd.cts': VueSymbol.Dts,
-  'd.mts': VueSymbol.Dts,
+  'd.ts': VueSymbol.DTS,
+  'd.cts': VueSymbol.DTS,
+  'd.mts': VueSymbol.DTS,
 
   // Elixir
   ex: VueSymbol.Elixir,
@@ -125,15 +125,15 @@ const fileExtensions: IconMap = {
   for: VueSymbol.Fortran,
 
   // F#
-  fs: VueSymbol.Fsharp,
-  fsi: VueSymbol.Fsharp,
-  fsx: VueSymbol.Fsharp,
+  fs: VueSymbol.FSharp,
+  fsi: VueSymbol.FSharp,
+  fsx: VueSymbol.FSharp,
 
   // Func (VueSymbol.TON)
   fc: VueSymbol.Func,
 
   // GIF
-  gif: VueSymbol.Gif,
+  gif: VueSymbol.GIF,
 
   // Gleam
   gleam: VueSymbol.Gleam,
@@ -146,8 +146,8 @@ const fileExtensions: IconMap = {
   'gradle.kts': VueSymbol.Gradle,
 
   // GraphQL
-  graphql: VueSymbol.Graphql,
-  gql: VueSymbol.Graphql,
+  graphql: VueSymbol.GraphQL,
+  gql: VueSymbol.GraphQL,
 
   // Header files
   h: VueSymbol.H,
@@ -163,8 +163,8 @@ const fileExtensions: IconMap = {
   lhs: VueSymbol.Haskell,
 
   // HTTP
-  http: VueSymbol.Http,
-  rest: VueSymbol.Http,
+  http: VueSymbol.HTTP,
+  rest: VueSymbol.HTTP,
 
   // i18n
   po: VueSymbol.I18n,
@@ -185,15 +185,15 @@ const fileExtensions: IconMap = {
   jar: VueSymbol.Java,
 
   // JavaScript test files
-  'test.js': VueSymbol.JsTest,
-  'test.jsx': VueSymbol.JsTest,
-  'spec.js': VueSymbol.JsTest,
-  'spec.jsx': VueSymbol.JsTest,
+  'test.js': VueSymbol.JavaScriptTest,
+  'test.jsx': VueSymbol.JavaScriptTest,
+  'spec.js': VueSymbol.JavaScriptTest,
+  'spec.jsx': VueSymbol.JavaScriptTest,
 
   // JavaScript
-  js: VueSymbol.Js,
-  cjs: VueSymbol.Js,
-  mjs: VueSymbol.Js,
+  js: VueSymbol.JavaScript,
+  cjs: VueSymbol.JavaScript,
+  mjs: VueSymbol.JavaScript,
 
   // Julia
   jl: VueSymbol.Julia,
@@ -227,7 +227,7 @@ const fileExtensions: IconMap = {
   markdown: VueSymbol.Markdown,
 
   // MDX
-  mdx: VueSymbol.Mdx,
+  mdx: VueSymbol.MDX,
 
   // Minecraft
   mcmeta: VueSymbol.Minecraft,
@@ -254,15 +254,15 @@ const fileExtensions: IconMap = {
   nunjucks: VueSymbol.Nunjucks,
 
   // OCaml
-  ml: VueSymbol.Ocaml,
-  mli: VueSymbol.Ocaml,
+  ml: VueSymbol.OCaml,
+  mli: VueSymbol.OCaml,
 
   // Patch
   patch: VueSymbol.Patch,
   diff: VueSymbol.Patch,
 
   // PDF
-  pdf: VueSymbol.Pdf,
+  pdf: VueSymbol.PDF,
 
   // Perl
   pl: VueSymbol.Perl,
@@ -270,14 +270,14 @@ const fileExtensions: IconMap = {
   perl: VueSymbol.Perl,
 
   // PHP
-  php: VueSymbol.Php,
-  phtml: VueSymbol.Php,
+  php: VueSymbol.PHP,
+  phtml: VueSymbol.PHP,
 
   // Pkl
   pkl: VueSymbol.Pkl,
 
   // PostCSS
-  pcss: VueSymbol.Postcss,
+  pcss: VueSymbol.PostCSS,
 
   // Prisma
   prisma: VueSymbol.Prisma,
@@ -310,14 +310,14 @@ const fileExtensions: IconMap = {
   'spec.tsx': VueSymbol.ReactTest,
 
   // React TypeScript
-  tsx: VueSymbol.ReactTs,
+  tsx: VueSymbol.ReactTS,
 
   // React
   jsx: VueSymbol.React,
 
   // Rescript
-  res: VueSymbol.Rescript,
-  resi: VueSymbol.RescriptInterface,
+  res: VueSymbol.ReScript,
+  resi: VueSymbol.ReScriptInterface,
 
   // Robot
   robot: VueSymbol.Robot,
@@ -335,7 +335,7 @@ const fileExtensions: IconMap = {
   sass: VueSymbol.Sass,
 
   // SBT
-  sbt: VueSymbol.Sbt,
+  sbt: VueSymbol.SBT,
 
   // Scala
   scala: VueSymbol.Scala,
@@ -377,7 +377,7 @@ const fileExtensions: IconMap = {
   svelte: VueSymbol.Svelte,
 
   // SVG
-  svg: VueSymbol.Svg,
+  svg: VueSymbol.SVG,
 
   // Svx
   svx: VueSymbol.Svx,
@@ -391,27 +391,27 @@ const fileExtensions: IconMap = {
   hcl: VueSymbol.Terraform,
 
   // TeX
-  tex: VueSymbol.Tex,
-  latex: VueSymbol.Tex,
-  bib: VueSymbol.Tex,
-  sty: VueSymbol.Tex,
-  cls: VueSymbol.Tex,
+  tex: VueSymbol.TeX,
+  latex: VueSymbol.TeX,
+  bib: VueSymbol.TeX,
+  sty: VueSymbol.TeX,
+  cls: VueSymbol.TeX,
 
   // Text
   txt: VueSymbol.Text,
   log: VueSymbol.Text,
 
   // TypeScript test files
-  'test.ts': VueSymbol.TsTest,
-  'spec.ts': VueSymbol.TsTest,
+  'test.ts': VueSymbol.TSTest,
+  'spec.ts': VueSymbol.TSTest,
 
   // TypeScript type files
-  'types.ts': VueSymbol.TsTypes,
+  'types.ts': VueSymbol.TSTypes,
 
   // TypeScript
-  ts: VueSymbol.Ts,
-  cts: VueSymbol.Ts,
-  mts: VueSymbol.Ts,
+  ts: VueSymbol.TypeScript,
+  cts: VueSymbol.TypeScript,
+  mts: VueSymbol.TypeScript,
 
   // Twig
   twig: VueSymbol.Twig,
@@ -440,16 +440,16 @@ const fileExtensions: IconMap = {
   vue: VueSymbol.Vue,
 
   // XML
-  xml: VueSymbol.Xml,
-  xsl: VueSymbol.Xml,
-  xslt: VueSymbol.Xml,
-  xsd: VueSymbol.Xml,
-  wsdl: VueSymbol.Xml,
-  plist: VueSymbol.Xml,
+  xml: VueSymbol.XML,
+  xsl: VueSymbol.XML,
+  xslt: VueSymbol.XML,
+  xsd: VueSymbol.XML,
+  wsdl: VueSymbol.XML,
+  plist: VueSymbol.XML,
 
   // YAML
-  yml: VueSymbol.Yaml,
-  yaml: VueSymbol.Yaml,
+  yml: VueSymbol.YAML,
+  yaml: VueSymbol.YAML,
 
   // Zig
   zig: VueSymbol.Zig,

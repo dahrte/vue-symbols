@@ -17,7 +17,7 @@ const folderNames: IconMap = {
   assets: VueSymbol.FolderAssets,
 
   // AWS
-  aws: VueSymbol.FolderAws,
+  aws: VueSymbol.FolderAWS,
   '.azure': VueSymbol.FolderAzure,
 
   // Bruno
@@ -50,9 +50,6 @@ const folderNames: IconMap = {
   // Core
   core: VueSymbol.FolderCore,
   lib: VueSymbol.FolderCore,
-
-  // Cursor
-  '.cursor': VueSymbol.FolderCursor,
 
   // Cypress
   cypress: VueSymbol.FolderCypress,
@@ -96,21 +93,21 @@ const folderNames: IconMap = {
   fonts: VueSymbol.FolderFonts,
 
   // Git
-  '.git': VueSymbol.FolderGithub,
+  '.git': VueSymbol.FolderGitHub,
 
   // GitHub
-  '.github': VueSymbol.FolderGithub,
+  '.github': VueSymbol.FolderGitHub,
 
   // GitLab
-  '.gitlab': VueSymbol.FolderGitlab,
+  '.gitlab': VueSymbol.FolderGitLab,
 
   // Gradle
   '.gradle': VueSymbol.FolderGradle,
   gradle: VueSymbol.FolderGradle,
 
   // GraphQL
-  gql: VueSymbol.FolderGraphql,
-  graphql: VueSymbol.FolderGraphql,
+  gql: VueSymbol.FolderGraphQL,
+  graphql: VueSymbol.FolderGraphQL,
 
   // Helpers
   helpers: VueSymbol.FolderHelpers,
@@ -139,12 +136,12 @@ const folderNames: IconMap = {
   types: VueSymbol.FolderInterfaces,
 
   // iOS
-  ios: VueSymbol.FolderIos,
+  ios: VueSymbol.FolderIOS,
 
   // JavaScript
-  javascript: VueSymbol.FolderJs,
-  js: VueSymbol.FolderJs,
-  scripts: VueSymbol.FolderJs,
+  javascript: VueSymbol.FolderJS,
+  js: VueSymbol.FolderJS,
+  scripts: VueSymbol.FolderJS,
 
   // Layout
   layout: VueSymbol.FolderLayout,
@@ -207,9 +204,6 @@ const folderNames: IconMap = {
   // React
   react: VueSymbol.FolderReact,
   components: VueSymbol.FolderReact,
-
-  // Redis
-  redis: VueSymbol.FolderRedis,
 
   // Reducer
   reducer: VueSymbol.FolderReducer,
@@ -279,7 +273,7 @@ const folderNames: IconMap = {
   vercel: VueSymbol.FolderVercel,
 
   // VSCode
-  '.vscode': VueSymbol.FolderVscode,
+  '.vscode': VueSymbol.FolderVSCode,
 
   // Files
   files: VueSymbol.FolderApp,

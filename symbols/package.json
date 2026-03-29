@@ -30,20 +30,18 @@
     }
   },
   "scripts": {
-    "build": "vp pack",
+    "build": "vp run build:components && vp pack",
+    "build:components": "node scripts/build-components.ts",
     "dev": "vp pack --watch",
     "test": "vp test",
     "prepublishOnly": "vp run build"
   },
   "devDependencies": {
     "@types/node": "catalog:",
-    "@vue/tsconfig": "catalog:",
     "bumpp": "11.0.1",
     "typescript": "catalog:",
-    "unplugin-vue": "7.1.1",
     "vite-plus": "catalog:",
-    "vue": "catalog:",
-    "vue-tsc": "catalog:"
+    "vue": "catalog:"
   },
   "peerDependencies": {
     "vue": "^3.5.0"

@@ -57,8 +57,8 @@ const fileNames: IconMap = {
   'claude.yml': VueSymbol.Claude,
 
   // CMake
-  'cmakecache.txt': VueSymbol.Cmake,
-  'cmakelists.txt': VueSymbol.Cmake,
+  'cmakecache.txt': VueSymbol.CMake,
+  'cmakelists.txt': VueSymbol.CMake,
 
   // Cloudflare VueSymbol.Workers
   'dev.vars': VueSymbol.CloudflareWorkers,
@@ -192,7 +192,7 @@ const fileNames: IconMap = {
   'dune-workspace.dev': VueSymbol.Dune,
 
   // EditorConfig
-  '.editorconfig': VueSymbol.Editorconfig,
+  '.editorconfig': VueSymbol.EditorConfig,
 
   // Earthfile
   '.env': VueSymbol.Gear,
@@ -204,21 +204,21 @@ const fileNames: IconMap = {
   '.env.test': VueSymbol.Gear,
 
   // ESLint
-  '.eslintcache': VueSymbol.Eslint,
-  '.eslintignore': VueSymbol.Eslint,
-  '.eslintrc': VueSymbol.Eslint,
-  '.eslintrc-jsdoc.js': VueSymbol.Eslint,
-  '.eslintrc-md.js': VueSymbol.Eslint,
-  '.eslintrc.cjs': VueSymbol.Eslint,
-  '.eslintrc.js': VueSymbol.Eslint,
-  '.eslintrc.json': VueSymbol.Eslint,
-  '.eslintrc.yaml': VueSymbol.Eslint,
-  '.eslintrc.yml': VueSymbol.Eslint,
-  '.esmrc': VueSymbol.Eslint,
-  'eslint.config.cjs': VueSymbol.Eslint,
-  'eslint.config.js': VueSymbol.Eslint,
-  'eslint.config.mjs': VueSymbol.Eslint,
-  'eslint.config.ts': VueSymbol.Eslint,
+  '.eslintcache': VueSymbol.ESLint,
+  '.eslintignore': VueSymbol.ESLint,
+  '.eslintrc': VueSymbol.ESLint,
+  '.eslintrc-jsdoc.js': VueSymbol.ESLint,
+  '.eslintrc-md.js': VueSymbol.ESLint,
+  '.eslintrc.cjs': VueSymbol.ESLint,
+  '.eslintrc.js': VueSymbol.ESLint,
+  '.eslintrc.json': VueSymbol.ESLint,
+  '.eslintrc.yaml': VueSymbol.ESLint,
+  '.eslintrc.yml': VueSymbol.ESLint,
+  '.esmrc': VueSymbol.ESLint,
+  'eslint.config.cjs': VueSymbol.ESLint,
+  'eslint.config.js': VueSymbol.ESLint,
+  'eslint.config.mjs': VueSymbol.ESLint,
+  'eslint.config.ts': VueSymbol.ESLint,
 
   // ExpressiveCode
   'ec.config.mjs': VueSymbol.ExpressiveCode,
@@ -271,7 +271,7 @@ const fileNames: IconMap = {
   'pre-push': VueSymbol.Git,
 
   // GitLab
-  '.gitlab-ci.yml': VueSymbol.Gitlab,
+  '.gitlab-ci.yml': VueSymbol.GitLab,
 
   // Go
   'go.mod': VueSymbol.Go,
@@ -285,21 +285,21 @@ const fileNames: IconMap = {
   gradlew: VueSymbol.Gradle,
 
   // GraphQL
-  '.graphqlconfig': VueSymbol.Graphql,
-  '.graphqlrc': VueSymbol.Graphql,
-  '.graphqlrc.cjs': VueSymbol.Graphql,
-  '.graphqlrc.js': VueSymbol.Graphql,
-  '.graphqlrc.json': VueSymbol.Graphql,
-  '.graphqlrc.toml': VueSymbol.Graphql,
-  '.graphqlrc.ts': VueSymbol.Graphql,
-  '.graphqlrc.yaml': VueSymbol.Graphql,
-  '.graphqlrc.yml': VueSymbol.Graphql,
-  'graphql.config.js': VueSymbol.Graphql,
-  'graphql.config.json': VueSymbol.Graphql,
-  'graphql.config.toml': VueSymbol.Graphql,
-  'graphql.config.ts': VueSymbol.Graphql,
-  'graphql.config.yaml': VueSymbol.Graphql,
-  'graphql.config.yml': VueSymbol.Graphql,
+  '.graphqlconfig': VueSymbol.GraphQL,
+  '.graphqlrc': VueSymbol.GraphQL,
+  '.graphqlrc.cjs': VueSymbol.GraphQL,
+  '.graphqlrc.js': VueSymbol.GraphQL,
+  '.graphqlrc.json': VueSymbol.GraphQL,
+  '.graphqlrc.toml': VueSymbol.GraphQL,
+  '.graphqlrc.ts': VueSymbol.GraphQL,
+  '.graphqlrc.yaml': VueSymbol.GraphQL,
+  '.graphqlrc.yml': VueSymbol.GraphQL,
+  'graphql.config.js': VueSymbol.GraphQL,
+  'graphql.config.json': VueSymbol.GraphQL,
+  'graphql.config.toml': VueSymbol.GraphQL,
+  'graphql.config.ts': VueSymbol.GraphQL,
+  'graphql.config.yaml': VueSymbol.GraphQL,
+  'graphql.config.yml': VueSymbol.GraphQL,
 
   // Gulp
   'gulp.config.json': VueSymbol.Gulp,
@@ -352,7 +352,7 @@ const fileNames: IconMap = {
   'jest.teardown.js': VueSymbol.Jest,
 
   // JavaScript test files
-  'test.js': VueSymbol.JsTest,
+  'test.js': VueSymbol.JavaScriptTest,
 
   // Keystatic
   'keystatic.config.ts': VueSymbol.Keystatic,
@@ -421,10 +421,10 @@ const fileNames: IconMap = {
   'nodemon.json': VueSymbol.Nodemon,
 
   // npm
-  '.npmignore': VueSymbol.Npm,
-  '.npmrc': VueSymbol.Npm,
-  'package-lock.json': VueSymbol.Npm,
-  'package.json': VueSymbol.Npm,
+  '.npmignore': VueSymbol.NPM,
+  '.npmrc': VueSymbol.NPM,
+  'package-lock.json': VueSymbol.NPM,
+  'package.json': VueSymbol.NPM,
 
   // Nuxt
   '.nuxtignore': VueSymbol.Nuxt,
@@ -471,25 +471,25 @@ const fileNames: IconMap = {
   '.perl': VueSymbol.Perl,
 
   // pnpm
-  '.pnpmfile.cjs': VueSymbol.Pnpm,
-  'pnpm-lock.yaml': VueSymbol.Pnpm,
-  'pnpm-workspace.yaml': VueSymbol.Pnpm,
+  '.pnpmfile.cjs': VueSymbol.PNPM,
+  'pnpm-lock.yaml': VueSymbol.PNPM,
+  'pnpm-workspace.yaml': VueSymbol.PNPM,
 
   // PostCSS
-  '.postcssrc': VueSymbol.Postcss,
-  '.postcssrc.cjs': VueSymbol.Postcss,
-  '.postcssrc.cts': VueSymbol.Postcss,
-  '.postcssrc.js': VueSymbol.Postcss,
-  '.postcssrc.json': VueSymbol.Postcss,
-  '.postcssrc.ts': VueSymbol.Postcss,
-  '.postcssrc.yaml': VueSymbol.Postcss,
-  '.postcssrc.yml': VueSymbol.Postcss,
-  'postcss.config.cjs': VueSymbol.Postcss,
-  'postcss.config.cts': VueSymbol.Postcss,
-  'postcss.config.js': VueSymbol.Postcss,
-  'postcss.config.mjs': VueSymbol.Postcss,
-  'postcss.config.mts': VueSymbol.Postcss,
-  'postcss.config.ts': VueSymbol.Postcss,
+  '.postcssrc': VueSymbol.PostCSS,
+  '.postcssrc.cjs': VueSymbol.PostCSS,
+  '.postcssrc.cts': VueSymbol.PostCSS,
+  '.postcssrc.js': VueSymbol.PostCSS,
+  '.postcssrc.json': VueSymbol.PostCSS,
+  '.postcssrc.ts': VueSymbol.PostCSS,
+  '.postcssrc.yaml': VueSymbol.PostCSS,
+  '.postcssrc.yml': VueSymbol.PostCSS,
+  'postcss.config.cjs': VueSymbol.PostCSS,
+  'postcss.config.cts': VueSymbol.PostCSS,
+  'postcss.config.js': VueSymbol.PostCSS,
+  'postcss.config.mjs': VueSymbol.PostCSS,
+  'postcss.config.mts': VueSymbol.PostCSS,
+  'postcss.config.ts': VueSymbol.PostCSS,
 
   // Prettier
   '.prettierignore': VueSymbol.Prettier,
@@ -573,7 +573,7 @@ const fileNames: IconMap = {
   'sanity.theme.mjs': VueSymbol.Sanity,
 
   // Serverless
-  'serverless.yml': VueSymbol.Severless,
+  'serverless.yml': VueSymbol.Serverless,
 
   // shadcn
   'components.json': VueSymbol.Shadcn,
@@ -600,10 +600,10 @@ const fileNames: IconMap = {
   'svelte.config.ts': VueSymbol.Svelte,
 
   // Svelte TypeScript
-  'svelte.ts': VueSymbol.SvelteTs,
+  'svelte.ts': VueSymbol.SvelteTS,
 
   // SWC
-  '.swcrc': VueSymbol.Swc,
+  '.swcrc': VueSymbol.SWC,
 
   // Tailwind
   'tailwind.config.cjs': VueSymbol.Tailwind,
@@ -630,43 +630,43 @@ const fileNames: IconMap = {
   'tauri.windows.toml': VueSymbol.Tauri,
 
   // TypeScript test files
-  'test.ts': VueSymbol.TsTest,
+  'test.ts': VueSymbol.TSTest,
 
   // TypeScript declarations
-  '.d.ts': VueSymbol.Dts,
+  '.d.ts': VueSymbol.DTS,
 
   // TSConfig
-  'tsconfig.app.json': VueSymbol.Tsconfig,
-  'tsconfig.base.json': VueSymbol.Tsconfig,
-  'tsconfig.build.json': VueSymbol.Tsconfig,
-  'tsconfig.cjs.json': VueSymbol.Tsconfig,
-  'tsconfig.config.json': VueSymbol.Tsconfig,
-  'tsconfig.e2e.json': VueSymbol.Tsconfig,
-  'tsconfig.editor.json': VueSymbol.Tsconfig,
-  'tsconfig.eslint.json': VueSymbol.Tsconfig,
-  'tsconfig.esm.json': VueSymbol.Tsconfig,
-  'tsconfig.json': VueSymbol.Tsconfig,
-  'tsconfig.lib.json': VueSymbol.Tsconfig,
-  'tsconfig.mjs.json': VueSymbol.Tsconfig,
-  'tsconfig.node.json': VueSymbol.Tsconfig,
-  'tsconfig.spec.json': VueSymbol.Tsconfig,
-  'tsconfig.test.json': VueSymbol.Tsconfig,
-  'tsconfig.vitest.json': VueSymbol.Tsconfig,
-  'tsconfig.web.json': VueSymbol.Tsconfig,
-  'tsconfig.webworker.json': VueSymbol.Tsconfig,
+  'tsconfig.app.json': VueSymbol.TSConfig,
+  'tsconfig.base.json': VueSymbol.TSConfig,
+  'tsconfig.build.json': VueSymbol.TSConfig,
+  'tsconfig.cjs.json': VueSymbol.TSConfig,
+  'tsconfig.config.json': VueSymbol.TSConfig,
+  'tsconfig.e2e.json': VueSymbol.TSConfig,
+  'tsconfig.editor.json': VueSymbol.TSConfig,
+  'tsconfig.eslint.json': VueSymbol.TSConfig,
+  'tsconfig.esm.json': VueSymbol.TSConfig,
+  'tsconfig.json': VueSymbol.TSConfig,
+  'tsconfig.lib.json': VueSymbol.TSConfig,
+  'tsconfig.mjs.json': VueSymbol.TSConfig,
+  'tsconfig.node.json': VueSymbol.TSConfig,
+  'tsconfig.spec.json': VueSymbol.TSConfig,
+  'tsconfig.test.json': VueSymbol.TSConfig,
+  'tsconfig.vitest.json': VueSymbol.TSConfig,
+  'tsconfig.web.json': VueSymbol.TSConfig,
+  'tsconfig.webworker.json': VueSymbol.TSConfig,
 
   // Turborepo
   'turbo.json': VueSymbol.Turborepo,
 
   // UnoCSS
-  'uno.config.js': VueSymbol.Unocss,
-  'uno.config.mjs': VueSymbol.Unocss,
-  'uno.config.mts': VueSymbol.Unocss,
-  'uno.config.ts': VueSymbol.Unocss,
-  'unocss.config.js': VueSymbol.Unocss,
-  'unocss.config.mjs': VueSymbol.Unocss,
-  'unocss.config.mts': VueSymbol.Unocss,
-  'unocss.config.ts': VueSymbol.Unocss,
+  'uno.config.js': VueSymbol.UnoCSS,
+  'uno.config.mjs': VueSymbol.UnoCSS,
+  'uno.config.mts': VueSymbol.UnoCSS,
+  'uno.config.ts': VueSymbol.UnoCSS,
+  'unocss.config.js': VueSymbol.UnoCSS,
+  'unocss.config.mjs': VueSymbol.UnoCSS,
+  'unocss.config.mts': VueSymbol.UnoCSS,
+  'unocss.config.ts': VueSymbol.UnoCSS,
 
   // Vanilla Extract
   'css.ts': VueSymbol.VanillaExtract,
@@ -909,12 +909,12 @@ const fileNames: IconMap = {
   'yarn.lock': VueSymbol.Yarn,
 
   // Yummacss
-  'yumma.config.cjs': VueSymbol.Yummacss,
-  'yumma.config.js': VueSymbol.Yummacss,
-  'yumma.config.mjs': VueSymbol.Yummacss,
-  'yumma.config.ts': VueSymbol.Yummacss,
-  'yumma.css': VueSymbol.Yummacss,
-  'yummacss.css': VueSymbol.Yummacss,
+  'yumma.config.cjs': VueSymbol.YummaCSS,
+  'yumma.config.js': VueSymbol.YummaCSS,
+  'yumma.config.mjs': VueSymbol.YummaCSS,
+  'yumma.config.ts': VueSymbol.YummaCSS,
+  'yumma.css': VueSymbol.YummaCSS,
+  'yummacss.css': VueSymbol.YummaCSS,
 
   // Jenkins
   jenkinsfile: VueSymbol.Jenkins,
