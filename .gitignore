@@ -18,6 +18,7 @@ node_modules/
 .nuxt/
 .output/
 .data/
+.vercel/
 dist
 
 # Finder (MacOS) folder config
