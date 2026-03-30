@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { LinkSquare01Icon } from '@hugeicons/core-free-icons'
-import { Npm, Github } from '@vue-symbols/icons/files'
+import { NPM, GitHub } from '@vue-symbols/icons/files'
 
 import Container from '@/components/Container.vue'
 import ExternalLink from '@/components/ExternalLink.vue'
 import Figma from '@/components/icons/Figma.vue'
 import VSCode from '@/components/icons/VSCode.vue'
+import InstallCommand from '@/components/InstallCommand.vue'
 import Logo from '@/components/Logo.vue'
 import { buttonVariants } from '@/ui/button/variants'
 import Icon from '@/ui/misc/Icon.vue'
@@ -14,12 +15,12 @@ const links = [
   {
     title: 'v1.0.0',
     href: 'https://npmx.dev/package/@vue-symbols/icons',
-    icon: Npm,
+    icon: NPM,
   },
   {
     title: 'Docs',
     href: 'https://github.com/dahrte/vue-symbols',
-    icon: Github,
+    icon: GitHub,
   },
   {
     title: 'Figma',
@@ -39,14 +40,14 @@ const links = [
     <Container class="border-b py-10">
       <div class="flex">
         <div class="flex w-full flex-col items-center justify-center gap-4">
-          <Logo class="size-14" />
+          <RouterLink to="/">
+            <Logo class="size-14" />
+          </RouterLink>
 
           <div class="flex flex-col items-center gap-4">
-            <RouterLink to="/" class="font-sans text-3xl font-semibold tracking-tight lg:text-5xl">
-              Vue-Symbols
-            </RouterLink>
+            <h1 class="font-sans text-3xl font-semibold tracking-tight lg:text-5xl">Vue-Symbols</h1>
 
-            <span class="text-content-base text-sm text-balance md:text-base">
+            <span class="text-content-base text-center text-sm text-balance md:text-base">
               Beautifully designed file and folder icons to enhance your Vue projects.
             </span>
           </div>
@@ -62,6 +63,8 @@ const links = [
               </li>
             </ul>
           </div>
+
+          <InstallCommand />
         </div>
       </div>
     </Container>
