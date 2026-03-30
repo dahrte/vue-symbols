@@ -36,6 +36,16 @@ export default defineNuxtConfig({
   },
   modules: ['@nuxtjs/color-mode', '@vueuse/nuxt'],
   vite: {
+    optimizeDeps: {
+      include: [
+        '@hugeicons/core-free-icons',
+        '@hugeicons/vue',
+        'clsx',
+        'reka-ui',
+        'tailwind-merge',
+        'tailwind-variants',
+      ],
+    },
     plugins: [tailwindcss()],
   },
 })
