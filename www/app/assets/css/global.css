@@ -101,14 +101,14 @@
 
 @font-face {
   font-family: 'GeistPixelSquare';
-  src: url('~/assets/fonts/GeistPixel-Square.woff2') format('woff2'); /* v1.8.0 */
+  src: url('/fonts/GeistPixel-Square.woff2') format('woff2'); /* v1.8.0 */
   font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Geist Mono';
-  src: url('~/assets/fonts/GeistMono.woff2') format('woff2'); /* v1.8.0 */
+  src: url('/fonts/GeistMono.woff2') format('woff2'); /* v1.8.0 */
   font-weight: 100 900;
   font-style: normal;
   font-display: block;

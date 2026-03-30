@@ -8,6 +8,20 @@ useHead({
     { rel: 'icon', href: '/favicon-32x32.png' },
     { rel: 'icon', href: '/favicon-16x16.png' },
     { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
+    {
+      rel: 'preload',
+      as: 'font',
+      href: '/fonts/GeistMono.woff2',
+      type: 'font/woff2',
+      crossorigin: 'anonymous',
+    },
+    {
+      rel: 'preload',
+      as: 'font',
+      href: '/fonts/GeistPixel-Square.woff2',
+      type: 'font/woff2',
+      crossorigin: 'anonymous',
+    },
   ],
   bodyAttrs: {
     class: 'bg-surface-base font-mono antialiased',
