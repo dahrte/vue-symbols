@@ -3,6 +3,7 @@ import Container from '@/components/Container.vue'
 import Footer from '@/components/Footer.vue'
 import Header from '@/components/Header.vue'
 import PatternDivider from '@/components/PatternDivider.vue'
+import { Toaster } from '@/ui/toast'
 import { TooltipProvider } from '@/ui/tooltip'
 
 <template>
@@ -21,4 +22,6 @@ import { TooltipProvider } from '@/ui/tooltip'
 
     <Footer />
   </TooltipProvider>
+
+  <Toaster position="bottom-center" />
 </template>

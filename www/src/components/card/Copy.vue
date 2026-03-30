@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { CodeIcon, Copy01Icon, Svg01Icon } from '@hugeicons/core-free-icons'
+import { CancelCircleIcon, CodeIcon, Copy01Icon, Svg01Icon, Tick01Icon } from '@hugeicons/core-free-icons'
 import { useClipboard } from '@vueuse/core'
 import { inject, ref, type Ref } from 'vue'
 
+import { useToast } from '@/composables/useToast'
 import { Button } from '@/ui/button'
 import { Icon } from '@/ui/misc'
 import { Popover, PopoverContent, PopoverTrigger } from '@/ui/popover'
@@ -15,6 +16,7 @@ const props = defineProps<{
 const iconRef = inject<Ref<HTMLElement | null>>('IconRef')
 
 const { copy } = useClipboard()
+const { toast } = useToast()
 
 const copiedImport = ref(false)
 const copiedSvg = ref(false)
@@ -25,12 +27,22 @@ function copyImport() {
   copy(statement)
   copiedImport.value = true
 
+  toast({
+    title: 'Copied import to clipboard',
+    variant: 'success',
+    icon: Tick01Icon,
+  })
+
   copiedImport.value = false
 }
 
 async function copySvg() {
   if (!iconRef || !iconRef.value) {
-    toast('Error copying icon')
+    toast({
+      title: 'Error copying icon',
+      variant: 'destructive',
+      icon: CancelCircleIcon,
+    })
     return
   }
 
@@ -40,6 +52,12 @@ async function copySvg() {
 
   await copy(svg.outerHTML)
   copiedSvg.value = true
+
+  toast({
+    title: 'Copied SVG to clipboard',
+    variant: 'success',
+    icon: Tick01Icon,
+  })
 
   copiedSvg.value = false
 }
