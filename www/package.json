@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxi generate",
+    "build": "nuxi build",
     "clean": "nuxi cleanup",
     "dev": "nuxi dev --host",
     "preview": "nuxi preview"
@@ -16,7 +16,6 @@
     "@vue-symbols/icons": "workspace:",
     "@vueuse/core": "14.2.1",
     "@vueuse/nuxt": "14.2.1",
-    "@vueuse/router": "14.2.1",
     "clsx": "2.1.1",
     "nuxt": "4.4.2",
     "reka-ui": "2.9.2",
