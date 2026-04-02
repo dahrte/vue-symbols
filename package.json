@@ -1,6 +1,7 @@
 {
   "name": "vue-symbols",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "vp run -r build",
     "check": "vp check",
@@ -10,6 +11,7 @@
   "devDependencies": {
     "@types/node": "25.5.0",
     "vite-plus": "0.1.14"
+    "zx": "8.8.5"
   },
   "engines": {
     "node": ">=22.12.0"

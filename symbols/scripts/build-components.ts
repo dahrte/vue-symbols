@@ -1,3 +1,5 @@
+#!/usr/bin/env zx
+
 /**
  * build-components.ts
  *
@@ -5,171 +7,187 @@
  * Vue 3 render-function components using defineComponent() + h().
  *
  * Output layout:
- *   src/files/{Name}.ts    — one component per file icon
- *   src/folders/{Name}.ts  — one component per folder icon
- *   src/files.ts           — barrel re-export of all file icons
- *   src/folders.ts         — barrel re-export of all folder icons
+ *   src/runtime/files/{Name}.ts    — one component per file icon
+ *   src/runtime/folders/{Name}.ts  — one component per folder icon
+ *   src/files.ts                   — barrel re-export of all file icons
+ *   src/folders.ts                 — barrel re-export of all folder icons
  *
  * Run with:
  *   node scripts/build-components.ts
  */
 
-import { readFileSync, writeFileSync, readdirSync, mkdirSync, rmSync, existsSync } from 'node:fs'
-import { join, basename, resolve } from 'node:path'
+import { readdirSync, readFileSync, existsSync, rmSync, mkdirSync, writeFileSync } from 'node:fs'
+import { resolve, join, basename } from 'node:path'
+
+import { $ } from 'zx'
 
 const ROOT = resolve(import.meta.dirname, '..')
 const ICONS_DIR = join(ROOT, 'icons')
-const SRC_DIR = join(ROOT, 'src')
+const COMPONENTS_DIR = join(ROOT, 'src', 'runtime')
+const BARRELS_DIR = join(ROOT, 'src')
 
 const HEADER = `// @vue-symbols/icons\n// Auto-generated. Do not edit.\n`
 
-// ---------------------------------------------------------------------------
-// SVG parser — minimal recursive-descent parser for well-formed SVG
-// ---------------------------------------------------------------------------
-
-interface SvgNode {
+interface SVGNode {
   tag: string
-  attrs: Record<string, string>
-  children: SvgNode[]
+  attributes: Record<string, string>
+  children: SVGNode[]
 }
 
-function parseSvg(xml: string): SvgNode {
-  let pos = 0
+function parseSVG(xml: string) {
+  let pointer = 0
 
   function skipWhitespace() {
-    while (pos < xml.length && /\s/.test(xml[pos]!)) pos++
+    // Any equivalent whitespace
+    while (pointer < xml.length && /\s/.test(xml[pointer])) pointer++
   }
 
-  function parseAttrValue(): string {
-    const quote = xml[pos]!
-    pos++ // skip opening quote
+  function parseAttributeValue(): string {
+    pointer++ // Skip opening quote
+
     let value = ''
-    while (pos < xml.length && xml[pos] !== quote) {
-      value += xml[pos]
-      pos++
+    while (pointer < xml.length && xml[pointer] !== '"') {
+      value += xml[pointer]
+      pointer++
     }
-    pos++ // skip closing quote
+
+    pointer++ // Skip closing quote
+
     return value
   }
 
-  function parseTag(): SvgNode | null {
+  function parseTag(): SVGNode | null {
     skipWhitespace()
-    if (pos >= xml.length || xml[pos] !== '<') return null
-    // skip comments / processing instructions / doctype
-    if (xml.startsWith('<!--', pos)) {
-      pos = xml.indexOf('-->', pos) + 3
-      return parseTag()
-    }
-    if (xml.startsWith('<?', pos)) {
-      pos = xml.indexOf('?>', pos) + 2
-      return parseTag()
-    }
-    if (xml.startsWith('<!', pos)) {
-      pos = xml.indexOf('>', pos) + 1
+
+    if (pointer >= xml.length || xml[pointer] !== '<') return null
+
+    // Skip comments / processing instructions / doctype
+    if (xml.startsWith('<!--', pointer)) {
+      pointer = xml.indexOf('-->', pointer) + 3
       return parseTag()
     }
 
-    pos++ // skip '<'
+    if (xml.startsWith('<?', pointer)) {
+      pointer = xml.indexOf('?>', pointer) + 2
+      return parseTag()
+    }
+
+    if (xml.startsWith('<!', pointer)) {
+      pointer = xml.indexOf('>', pointer) + 1
+      return parseTag()
+    }
+
+    pointer++ // Skip "<"
     skipWhitespace()
 
-    // read tag name
+    // Start extracting the tag name. It ends when any equivalent whitespace or ">" is found.
     let tag = ''
-    while (pos < xml.length && !/[\s/>]/.test(xml[pos]!)) {
-      tag += xml[pos]
-      pos++
+    while (pointer < xml.length && !/[\s/>]/.test(xml[pointer])) {
+      tag += xml[pointer]
+      pointer++
     }
 
-    // read attributes
-    const attrs: Record<string, string> = {}
-    while (pos < xml.length) {
+    // Start extracting the attributes
+    const attributes: Record<string, string> = {}
+    while (pointer < xml.length) {
       skipWhitespace()
-      if (xml[pos] === '/' || xml[pos] === '>') break
-      let attrName = ''
-      while (pos < xml.length && !/[\s=/>]/.test(xml[pos]!)) {
-        attrName += xml[pos]
-        pos++
+
+      if (xml[pointer] === '/' || xml[pointer] === '>') break
+
+      let attributeName = ''
+      // It ends when any equivalent whitespace, "=", "/" or ">" is found.
+      while (pointer < xml.length && !/[\s=/>]/.test(xml[pointer])) {
+        attributeName += xml[pointer]
+        pointer++
       }
+
       skipWhitespace()
-      if (xml[pos] === '=') {
-        pos++ // skip '='
+
+      if (xml[pointer] === '=') {
+        pointer++ // Skip "=" to start extracting the attribute value
         skipWhitespace()
-        attrs[attrName] = parseAttrValue()
+
+        attributes[attributeName] = parseAttributeValue()
       } else {
-        attrs[attrName] = ''
+        attributes[attributeName] = ''
       }
     }
 
-    // self-closing?
-    if (xml[pos] === '/') {
-      pos++ // skip '/'
-      pos++ // skip '>'
-      return { tag, attrs, children: [] }
-    }
-    pos++ // skip '>'
+    // Self closing tag
+    if (xml[pointer] === '/') {
+      pointer += 2 // Skip "/>"
 
-    // parse children
-    const children: SvgNode[] = []
-    while (pos < xml.length) {
+      return { tag, attributes, children: [] }
+    }
+
+    pointer++ // Skip ">"
+
+    // Start parsing children
+    const children: SVGNode[] = []
+    while (pointer < xml.length) {
       skipWhitespace()
-      if (xml.startsWith(`</${tag}`, pos)) {
-        pos = xml.indexOf('>', pos) + 1
+
+      if (xml.startsWith(`</${tag}>`, pointer)) {
+        pointer = xml.indexOf('>', pointer) + 1
         break
       }
-      if (xml[pos] === '<') {
+
+      if (xml[pointer] === '<') {
         const child = parseTag()
         if (child) children.push(child)
       } else {
-        // skip text content
-        while (pos < xml.length && xml[pos] !== '<') pos++
+        while (pointer < xml.length && xml[pointer] !== '<') pointer++
       }
     }
 
-    return { tag, attrs, children }
+    return { tag, attributes, children }
   }
 
   const root = parseTag()
-  if (!root) throw new Error('Failed to parse SVG')
+  if (!root) throw new Error('Failed to parse SVG file.')
+
   return root
 }
 
 // ---------------------------------------------------------------------------
-// Code generation — convert SvgNode tree into h() call source code
+// Component generation — convert SVGNode tree into h() call source code.
 // ---------------------------------------------------------------------------
 
-// Attributes to drop from the root <svg> element
-const SVG_ROOT_DROP = new Set(['width', 'height'])
+// Attributes to drop from the root <svg> element.
+const SVG_DROP_ATTR = new Set(['width', 'height'])
 
 function escapeStr(s: string): string {
+  // Replace “\” with “\\” and “‘” with “\’”
   return s.replace(/\\/g, '\\\\').replace(/'/g, "\\'")
 }
 
-function attrsToSource(attrs: Record<string, string>, isRoot: boolean): string {
-  const entries = Object.entries(attrs).filter(([key]) => !(isRoot && SVG_ROOT_DROP.has(key)))
-  if (entries.length === 0) return '{}'
+function attributesToVNodeProps(attributes: Record<string, string>, root: boolean): string {
+  const entries = Object.entries(attributes).filter(([key]) => !(root && SVG_DROP_ATTR.has(key)))
+  if (!entries.length) return '{}'
 
   const parts = entries.map(([key, value]) => {
-    // Keys with hyphens need quoting
+    // kebab-case key need quoting
     const safeKey = /^[a-zA-Z_$][a-zA-Z0-9_$]*$/.test(key) ? key : `'${key}'`
     return `${safeKey}: '${escapeStr(value)}'`
   })
-  return `{ ${parts.join(', ')} }`
+
+  return root ? `{ ${parts.join(', ')}, ...attrs }` : `{ ${parts.join(', ')} }`
 }
 
-function nodeToSource(node: SvgNode, indent: string, isRoot: boolean): string {
-  const attrsStr = attrsToSource(node.attrs, isRoot)
+function nodeToVDOM(node: SVGNode, root: boolean): string {
+  const attributes = attributesToVNodeProps(node.attributes, root)
 
   if (node.children.length === 0) {
-    return `${indent}h('${node.tag}', ${attrsStr})`
+    return `h('${node.tag}', ${attributes})`
   }
 
-  const childIndent = indent + '  '
-  const childSources = node.children.map((c) => nodeToSource(c, childIndent, false))
+  const children = node.children.map((c) => nodeToVDOM(c, false))
 
-  return [`${indent}h('${node.tag}', ${attrsStr}, [`, childSources.join(',\n'), `${indent}])`].join('\n')
+  return [`h('${node.tag}', ${attributes}, [`, children.join(',\n'), '])'].join('\n')
 }
 
-function generateComponent(name: string, svgNode: SvgNode): string {
-  const body = nodeToSource(svgNode, '    ', true)
+function generateComponent(name: string, node: SVGNode) {
+  const content = nodeToVDOM(node, true)
 
   return [
     HEADER,
@@ -177,8 +195,8 @@ function generateComponent(name: string, svgNode: SvgNode): string {
     '',
     'export default defineComponent({',
     `  name: '${name}',`,
-    '  render() {',
-    `    return ${body.trimStart()}`,
+    '  setup(_, { attrs }) {',
+    `    return () => ${content.trim()}`,
     '  },',
     '})',
     '',
@@ -186,12 +204,12 @@ function generateComponent(name: string, svgNode: SvgNode): string {
 }
 
 // ---------------------------------------------------------------------------
-// File I/O — read icons, write components & barrel files
+// Read icons, write components & barrel files.
 // ---------------------------------------------------------------------------
 
-function processCategory(category: 'files' | 'folders') {
+function processIcons(category: 'files' | 'folders') {
   const iconsPath = join(ICONS_DIR, category)
-  const outPath = join(SRC_DIR, category)
+  const outPath = join(COMPONENTS_DIR, category)
 
   // Clean & recreate output directory
   if (existsSync(outPath)) rmSync(outPath, { recursive: true })
@@ -205,27 +223,36 @@ function processCategory(category: 'files' | 'folders') {
 
   for (const file of svgFiles) {
     const name = basename(file, '.svg')
-    const svgContent = readFileSync(join(iconsPath, file), 'utf-8')
-    const svgTree = parseSvg(svgContent)
-    const componentSource = generateComponent(name, svgTree)
+    const fileContent = readFileSync(join(iconsPath, file), 'utf-8')
+    const tree = parseSVG(fileContent)
+    const component = generateComponent(name, tree)
 
-    const outFile = join(outPath, `${name}.ts`)
-    writeFileSync(outFile, componentSource, 'utf-8')
+    writeFileSync(join(outPath, `${name}.ts`), component, 'utf-8')
 
-    exports.push({ name, path: `./${category}/${name}` })
+    exports.push({ name, path: `./runtime/${category}/${name}` })
   }
 
-  // Write barrel file
+  // Write barrel files
   const barrelLines = [HEADER, ...exports.map((e) => `export { default as ${e.name} } from '${e.path}'`), '']
-  writeFileSync(join(SRC_DIR, `${category}.ts`), barrelLines.join('\n'), 'utf-8')
+  writeFileSync(join(BARRELS_DIR, `${category}.ts`), barrelLines.join('\n'), 'utf-8')
 
-  console.log(`✓ ${category}: ${exports.length} components`)
+  console.log(`🗸 Created ${exports.length} ${category} components.`)
 }
 
 // ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
 
-processCategory('files')
-processCategory('folders')
-console.log('Done.')
+async function main() {
+  processIcons('files')
+  processIcons('folders')
+
+  const paths = ['src/runtime/files', 'src/runtime/folders', 'src/files.ts', 'src/folders.ts']
+
+  console.log('Formatting...')
+  await $`vp fmt ${paths} --write`
+
+  console.log('Done!')
+}
+
+await main()
