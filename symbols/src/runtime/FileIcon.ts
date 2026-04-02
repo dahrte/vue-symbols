@@ -1,8 +1,8 @@
 import { computed, defineComponent, h } from 'vue'
 
 import { Document } from '../files'
-import { fileExtensions } from './file-extensions'
-import { fileNames } from './file-names'
+import { fileExtensions } from '../utils/file-extensions'
+import { fileNames } from '../utils/file-names'
 
 export interface FileIconProps {
   filename: string
@@ -26,6 +26,7 @@ export default defineComponent({
       for (let i = 1; i < parts.length; i++) {
         const ext = parts.slice(i).join('.')
         const byExt = fileExtensions[ext]
+
         if (byExt) return byExt
       }
 

@@ -1,7 +1,7 @@
 import { computed, defineComponent, h } from 'vue'
 
 import { Folder } from '../folders'
-import { folderNames } from './folder-names'
+import { folderNames } from '../utils/folder-names'
 
 export interface FolderIconProps {
   foldername: string

@@ -1,5 +1,5 @@
 # Ignore Auto-generated files
-src/files
-src/folders
+src/runtime/files
+src/runtime/folders
 src/files.ts
 src/folders.ts
