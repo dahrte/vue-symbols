@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxi build",
-    "clean": "nuxi cleanup",
+    "clean": "git clean -fdX .nuxt .vercel node_modules",
     "dev": "nuxi dev --host",
+    "postinstall": "nuxt prepare",
     "preview": "nuxi preview"
   },
   "dependencies": {

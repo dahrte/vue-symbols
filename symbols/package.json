@@ -30,10 +30,8 @@
     }
   },
   "scripts": {
-    "build": "vp run build:components && vp pack",
-    "build:components": "node scripts/build-components.ts",
+    "clean": "git clean -fdX dist node_modules src/runtime/files src/runtime/folders src/files.ts src/folders.ts",
     "dev": "vp pack --watch",
-    "test": "vp test",
     "prepublishOnly": "vp run build"
   },
   "devDependencies": {
@@ -44,6 +42,6 @@
     "vue": "catalog:"
   },
   "peerDependencies": {
-    "vue": "^3.5.0"
+    "vue": "^3.3.0"
   }
 }
