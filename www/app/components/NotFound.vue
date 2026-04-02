@@ -3,7 +3,7 @@ import { ComponentIcon, CryingIcon } from '@hugeicons/core-free-icons'
 
 import { buttonVariants } from '@/ui/button/variants'
 
-const { search } = useQueryStore()
+const { searchDebounced } = useQueryStore()
 </script>
 
 <template>
@@ -15,7 +15,7 @@ const { search } = useQueryStore()
 
       <EmptyTitle>Not Found</EmptyTitle>
 
-      <EmptyDescription>No icons match your search for “{{ search }}”.</EmptyDescription>
+      <EmptyDescription class="wrap-anywhere">No icons match your search for “{{ searchDebounced }}”.</EmptyDescription>
     </EmptyHeader>
 
     <EmptyContent>
