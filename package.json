@@ -9,8 +9,8 @@
     "fix": "vp check --fix"
   },
   "devDependencies": {
-    "@types/node": "25.5.0",
-    "vite-plus": "0.1.14"
+    "@types/node": "catalog:",
+    "vite-plus": "catalog:",
     "zx": "8.8.5"
   },
   "engines": {
