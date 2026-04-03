@@ -452,17 +452,25 @@ const fileNames: IconMap = {
   'orval.config.mts': VueSymbol.Orval,
   'orval.config.ts': VueSymbol.Orval,
 
+  // Oxfmt
+  '.oxfmtrc.json': VueSymbol.Oxc,
+  '.oxfmtrc.jsonc': VueSymbol.Oxc,
+  'oxfmt.config.cjs': VueSymbol.Oxc,
+  'oxfmt.config.cts': VueSymbol.Oxc,
+  'oxfmt.config.js': VueSymbol.Oxc,
+  'oxfmt.config.mjs': VueSymbol.Oxc,
+  'oxfmt.config.mts': VueSymbol.Oxc,
+  'oxfmt.config.ts': VueSymbol.Oxc,
+
   // Oxlint
-  '.oxfmtrc.json': VueSymbol.Oxlint,
-  '.oxfmtrc.jsonc': VueSymbol.Oxlint,
-  '.oxlintignore': VueSymbol.Oxlint,
-  '.oxlintrc.json': VueSymbol.Oxlint,
-  'oxlint.config.cjs': VueSymbol.Oxlint,
-  'oxlint.config.cts': VueSymbol.Oxlint,
-  'oxlint.config.js': VueSymbol.Oxlint,
-  'oxlint.config.mjs': VueSymbol.Oxlint,
-  'oxlint.config.mts': VueSymbol.Oxlint,
-  'oxlint.config.ts': VueSymbol.Oxlint,
+  '.oxlintignore': VueSymbol.Oxc,
+  '.oxlintrc.json': VueSymbol.Oxc,
+  'oxlint.config.cjs': VueSymbol.Oxc,
+  'oxlint.config.cts': VueSymbol.Oxc,
+  'oxlint.config.js': VueSymbol.Oxc,
+  'oxlint.config.mjs': VueSymbol.Oxc,
+  'oxlint.config.mts': VueSymbol.Oxc,
+  'oxlint.config.ts': VueSymbol.Oxc,
 
   // PandaCSS
   'panda.config.ts': VueSymbol.Panda,
@@ -535,12 +543,12 @@ const fileNames: IconMap = {
   'robots.txt': VueSymbol.Robot,
 
   // Rolldown
-  'rolldown.config.cjs': VueSymbol.Vite,
-  'rolldown.config.cts': VueSymbol.Vite,
-  'rolldown.config.js': VueSymbol.Vite,
-  'rolldown.config.mjs': VueSymbol.Vite,
-  'rolldown.config.mts': VueSymbol.Vite,
-  'rolldown.config.ts': VueSymbol.Vite,
+  'rolldown.config.cjs': VueSymbol.Rolldown,
+  'rolldown.config.cts': VueSymbol.Rolldown,
+  'rolldown.config.js': VueSymbol.Rolldown,
+  'rolldown.config.mjs': VueSymbol.Rolldown,
+  'rolldown.config.mts': VueSymbol.Rolldown,
+  'rolldown.config.ts': VueSymbol.Rolldown,
 
   // Rome
   'rome.json': VueSymbol.Rome,
