@@ -57,23 +57,23 @@ async function copySvg() {
 </script>
 
 <template>
-  <Popover>
-    <PopoverTrigger as-child>
+  <DropdownMenu>
+    <DropdownMenuTrigger as-child>
       <Button icon size="sm" variant="ghost">
         <Icon :icon="Copy01Icon" aria-hidden="true" />
       </Button>
-    </PopoverTrigger>
+    </DropdownMenuTrigger>
 
-    <PopoverContent side="bottom" class="flex flex-col gap-2">
-      <Button variant="secondary" class="justify-start gap-2" @click="copyImport">
+    <DropdownMenuContent>
+      <DropdownMenuItem @select="copyImport">
         <Icon :icon="CodeIcon" aria-hidden="true" />
-        Copy import
-      </Button>
+        <span>Copy import</span>
+      </DropdownMenuItem>
 
-      <Button variant="secondary" class="justify-start gap-2" @click="copySvg">
+      <DropdownMenuItem @select="copySvg">
         <Icon :icon="Svg01Icon" aria-hidden="true" />
-        Copy SVG
-      </Button>
-    </PopoverContent>
-  </Popover>
+        <span>Copy SVG</span>
+      </DropdownMenuItem>
+    </DropdownMenuContent>
+  </DropdownMenu>
 </template>
