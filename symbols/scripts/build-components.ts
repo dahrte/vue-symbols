@@ -3,8 +3,8 @@
 /**
  * build-components.ts
  *
- * Reads SVG files from icons/files and icons/folders, then generates
- * Vue 3 render-function components using defineComponent() + h().
+ * Reads SVG files from www/public/icons/files and www/public/icons/folders,
+ * then generates Vue 3 render-function components using defineComponent() + h().
  *
  * Output layout:
  *   src/runtime/files/{Name}.ts    — one component per file icon
@@ -21,10 +21,12 @@ import { resolve, join, basename } from 'node:path'
 
 import { $ } from 'zx'
 
-const ROOT = resolve(import.meta.dirname, '..')
-const ICONS_DIR = join(ROOT, 'icons')
-const COMPONENTS_DIR = join(ROOT, 'src', 'runtime')
-const BARRELS_DIR = join(ROOT, 'src')
+const _dirname = import.meta.dirname
+
+const REPO_ROOT = join(_dirname, '../..')
+const ICONS_PUBLIC = join(REPO_ROOT, 'www/public/icons')
+const COMPONENTS_DIR = join(REPO_ROOT, 'symbols/src/runtime')
+const BARRELS_DIR = join(REPO_ROOT, 'symbols/src')
 
 const HEADER = `// @vue-symbols/icons\n// Auto-generated. Do not edit.\n`
 
@@ -208,7 +210,7 @@ function generateComponent(name: string, node: SVGNode) {
 // ---------------------------------------------------------------------------
 
 function processIcons(category: 'files' | 'folders') {
-  const iconsPath = join(ICONS_DIR, category)
+  const iconsPath = join(ICONS_PUBLIC, category)
   const outPath = join(COMPONENTS_DIR, category)
 
   // Clean & recreate output directory

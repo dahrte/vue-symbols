@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="#ea580c" stroke-width="2" d="M18.45 5.25c.925 0 1.675.781 1.675 1.746v4.554c0 3.977-3.09 7.2-6.9 7.2-3.461 0-6.327-2.657-6.825-6.122-.033-4.128-.033-2.128-.033-6.029.172-.773.837-1.35 1.63-1.35z"/>
+  <mask id="a" width="4" height="8" x="0" y="5" maskUnits="userSpaceOnUse" style="mask-type:alpha">
+    <path fill="#d9d9d9" stroke="#f87171" d="M3.333 6H1.458v6h1.875z"/>
+  </mask>
+  <g mask="url(#a)">
+    <ellipse cx="1.917" cy="2" stroke="#ea580c" stroke-width="2" rx="1.917" ry="2" transform="matrix(-1 0 0 1 5.706 7.5)"/>
+  </g>
+</svg>

@@ -1,0 +1,366 @@
+[
+  {
+    "title": "Folder",
+    "path": "/icons/folders/Folder.svg"
+  },
+  {
+    "title": "FolderActions",
+    "path": "/icons/folders/FolderActions.svg"
+  },
+  {
+    "title": "FolderAndroid",
+    "path": "/icons/folders/FolderAndroid.svg"
+  },
+  {
+    "title": "FolderAngular",
+    "path": "/icons/folders/FolderAngular.svg"
+  },
+  {
+    "title": "FolderApp",
+    "path": "/icons/folders/FolderApp.svg"
+  },
+  {
+    "title": "FolderAssets",
+    "path": "/icons/folders/FolderAssets.svg"
+  },
+  {
+    "title": "FolderAWS",
+    "path": "/icons/folders/FolderAWS.svg"
+  },
+  {
+    "title": "FolderAzure",
+    "path": "/icons/folders/FolderAzure.svg"
+  },
+  {
+    "title": "FolderBlue",
+    "path": "/icons/folders/FolderBlue.svg"
+  },
+  {
+    "title": "FolderBlueCode",
+    "path": "/icons/folders/FolderBlueCode.svg"
+  },
+  {
+    "title": "FolderBlueOutline",
+    "path": "/icons/folders/FolderBlueOutline.svg"
+  },
+  {
+    "title": "FolderBruno",
+    "path": "/icons/folders/FolderBruno.svg"
+  },
+  {
+    "title": "FolderBuild",
+    "path": "/icons/folders/FolderBuild.svg"
+  },
+  {
+    "title": "FolderClaude",
+    "path": "/icons/folders/FolderClaude.svg"
+  },
+  {
+    "title": "FolderConfig",
+    "path": "/icons/folders/FolderConfig.svg"
+  },
+  {
+    "title": "FolderConstants",
+    "path": "/icons/folders/FolderConstants.svg"
+  },
+  {
+    "title": "FolderContext",
+    "path": "/icons/folders/FolderContext.svg"
+  },
+  {
+    "title": "FolderCore",
+    "path": "/icons/folders/FolderCore.svg"
+  },
+  {
+    "title": "FolderCypress",
+    "path": "/icons/folders/FolderCypress.svg"
+  },
+  {
+    "title": "FolderDatabase",
+    "path": "/icons/folders/FolderDatabase.svg"
+  },
+  {
+    "title": "FolderDocker",
+    "path": "/icons/folders/FolderDocker.svg"
+  },
+  {
+    "title": "FolderDocuments",
+    "path": "/icons/folders/FolderDocuments.svg"
+  },
+  {
+    "title": "FolderDrizzle",
+    "path": "/icons/folders/FolderDrizzle.svg"
+  },
+  {
+    "title": "FolderEffects",
+    "path": "/icons/folders/FolderEffects.svg"
+  },
+  {
+    "title": "FolderExpo",
+    "path": "/icons/folders/FolderExpo.svg"
+  },
+  {
+    "title": "FolderFacade",
+    "path": "/icons/folders/FolderFacade.svg"
+  },
+  {
+    "title": "FolderFirebase",
+    "path": "/icons/folders/FolderFirebase.svg"
+  },
+  {
+    "title": "FolderFonts",
+    "path": "/icons/folders/FolderFonts.svg"
+  },
+  {
+    "title": "FolderGitHub",
+    "path": "/icons/folders/FolderGitHub.svg"
+  },
+  {
+    "title": "FolderGitLab",
+    "path": "/icons/folders/FolderGitLab.svg"
+  },
+  {
+    "title": "FolderGradle",
+    "path": "/icons/folders/FolderGradle.svg"
+  },
+  {
+    "title": "FolderGraphQL",
+    "path": "/icons/folders/FolderGraphQL.svg"
+  },
+  {
+    "title": "FolderGray",
+    "path": "/icons/folders/FolderGray.svg"
+  },
+  {
+    "title": "FolderGrayCode",
+    "path": "/icons/folders/FolderGrayCode.svg"
+  },
+  {
+    "title": "FolderGrayOutline",
+    "path": "/icons/folders/FolderGrayOutline.svg"
+  },
+  {
+    "title": "FolderGreen",
+    "path": "/icons/folders/FolderGreen.svg"
+  },
+  {
+    "title": "FolderGreenCode",
+    "path": "/icons/folders/FolderGreenCode.svg"
+  },
+  {
+    "title": "FolderGreenOutline",
+    "path": "/icons/folders/FolderGreenOutline.svg"
+  },
+  {
+    "title": "FolderHelpers",
+    "path": "/icons/folders/FolderHelpers.svg"
+  },
+  {
+    "title": "FolderHooks",
+    "path": "/icons/folders/FolderHooks.svg"
+  },
+  {
+    "title": "FolderI18n",
+    "path": "/icons/folders/FolderI18n.svg"
+  },
+  {
+    "title": "FolderImages",
+    "path": "/icons/folders/FolderImages.svg"
+  },
+  {
+    "title": "FolderInterceptors",
+    "path": "/icons/folders/FolderInterceptors.svg"
+  },
+  {
+    "title": "FolderInterfaces",
+    "path": "/icons/folders/FolderInterfaces.svg"
+  },
+  {
+    "title": "FolderIOS",
+    "path": "/icons/folders/FolderIOS.svg"
+  },
+  {
+    "title": "FolderJS",
+    "path": "/icons/folders/FolderJS.svg"
+  },
+  {
+    "title": "FolderLayout",
+    "path": "/icons/folders/FolderLayout.svg"
+  },
+  {
+    "title": "FolderLock",
+    "path": "/icons/folders/FolderLock.svg"
+  },
+  {
+    "title": "FolderMail",
+    "path": "/icons/folders/FolderMail.svg"
+  },
+  {
+    "title": "FolderMiddleware",
+    "path": "/icons/folders/FolderMiddleware.svg"
+  },
+  {
+    "title": "FolderModels",
+    "path": "/icons/folders/FolderModels.svg"
+  },
+  {
+    "title": "FolderModules",
+    "path": "/icons/folders/FolderModules.svg"
+  },
+  {
+    "title": "FolderMongo",
+    "path": "/icons/folders/FolderMongo.svg"
+  },
+  {
+    "title": "FolderNginx",
+    "path": "/icons/folders/FolderNginx.svg"
+  },
+  {
+    "title": "FolderNodeModules",
+    "path": "/icons/folders/FolderNodeModules.svg"
+  },
+  {
+    "title": "FolderOrange",
+    "path": "/icons/folders/FolderOrange.svg"
+  },
+  {
+    "title": "FolderOrangeCode",
+    "path": "/icons/folders/FolderOrangeCode.svg"
+  },
+  {
+    "title": "FolderOrangeOutline",
+    "path": "/icons/folders/FolderOrangeOutline.svg"
+  },
+  {
+    "title": "FolderPink",
+    "path": "/icons/folders/FolderPink.svg"
+  },
+  {
+    "title": "FolderPinkCode",
+    "path": "/icons/folders/FolderPinkCode.svg"
+  },
+  {
+    "title": "FolderPinkOutline",
+    "path": "/icons/folders/FolderPinkOutline.svg"
+  },
+  {
+    "title": "FolderPipes",
+    "path": "/icons/folders/FolderPipes.svg"
+  },
+  {
+    "title": "FolderPrisma",
+    "path": "/icons/folders/FolderPrisma.svg"
+  },
+  {
+    "title": "FolderProviders",
+    "path": "/icons/folders/FolderProviders.svg"
+  },
+  {
+    "title": "FolderPurple",
+    "path": "/icons/folders/FolderPurple.svg"
+  },
+  {
+    "title": "FolderPurpleCode",
+    "path": "/icons/folders/FolderPurpleCode.svg"
+  },
+  {
+    "title": "FolderPurpleOutline",
+    "path": "/icons/folders/FolderPurpleOutline.svg"
+  },
+  {
+    "title": "FolderReact",
+    "path": "/icons/folders/FolderReact.svg"
+  },
+  {
+    "title": "FolderRed",
+    "path": "/icons/folders/FolderRed.svg"
+  },
+  {
+    "title": "FolderRedCode",
+    "path": "/icons/folders/FolderRedCode.svg"
+  },
+  {
+    "title": "FolderRedOutline",
+    "path": "/icons/folders/FolderRedOutline.svg"
+  },
+  {
+    "title": "FolderReducer",
+    "path": "/icons/folders/FolderReducer.svg"
+  },
+  {
+    "title": "FolderRouter",
+    "path": "/icons/folders/FolderRouter.svg"
+  },
+  {
+    "title": "FolderSass",
+    "path": "/icons/folders/FolderSass.svg"
+  },
+  {
+    "title": "FolderSelector",
+    "path": "/icons/folders/FolderSelector.svg"
+  },
+  {
+    "title": "FolderServices",
+    "path": "/icons/folders/FolderServices.svg"
+  },
+  {
+    "title": "FolderShared",
+    "path": "/icons/folders/FolderShared.svg"
+  },
+  {
+    "title": "FolderSky",
+    "path": "/icons/folders/FolderSky.svg"
+  },
+  {
+    "title": "FolderSkyCode",
+    "path": "/icons/folders/FolderSkyCode.svg"
+  },
+  {
+    "title": "FolderSkyOutline",
+    "path": "/icons/folders/FolderSkyOutline.svg"
+  },
+  {
+    "title": "FolderSrc",
+    "path": "/icons/folders/FolderSrc.svg"
+  },
+  {
+    "title": "FolderSupabase",
+    "path": "/icons/folders/FolderSupabase.svg"
+  },
+  {
+    "title": "FolderTarget",
+    "path": "/icons/folders/FolderTarget.svg"
+  },
+  {
+    "title": "FolderTauri",
+    "path": "/icons/folders/FolderTauri.svg"
+  },
+  {
+    "title": "FolderTina",
+    "path": "/icons/folders/FolderTina.svg"
+  },
+  {
+    "title": "FolderUtils",
+    "path": "/icons/folders/FolderUtils.svg"
+  },
+  {
+    "title": "FolderVercel",
+    "path": "/icons/folders/FolderVercel.svg"
+  },
+  {
+    "title": "FolderVSCode",
+    "path": "/icons/folders/FolderVSCode.svg"
+  },
+  {
+    "title": "FolderYellow",
+    "path": "/icons/folders/FolderYellow.svg"
+  },
+  {
+    "title": "FolderYellowCode",
+    "path": "/icons/folders/FolderYellowCode.svg"
+  },
+  {
+    "title": "FolderYellowOutline",
+    "path": "/icons/folders/FolderYellowOutline.svg"
+  }
+]

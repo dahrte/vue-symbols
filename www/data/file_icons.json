@@ -1,0 +1,878 @@
+[
+  {
+    "title": "Angular",
+    "path": "/icons/files/Angular.svg"
+  },
+  {
+    "title": "AngularComponent",
+    "path": "/icons/files/AngularComponent.svg"
+  },
+  {
+    "title": "AngularDirective",
+    "path": "/icons/files/AngularDirective.svg"
+  },
+  {
+    "title": "AngularGuard",
+    "path": "/icons/files/AngularGuard.svg"
+  },
+  {
+    "title": "AngularModule",
+    "path": "/icons/files/AngularModule.svg"
+  },
+  {
+    "title": "AngularPipe",
+    "path": "/icons/files/AngularPipe.svg"
+  },
+  {
+    "title": "AngularService",
+    "path": "/icons/files/AngularService.svg"
+  },
+  {
+    "title": "Astro",
+    "path": "/icons/files/Astro.svg"
+  },
+  {
+    "title": "Audio",
+    "path": "/icons/files/Audio.svg"
+  },
+  {
+    "title": "Babel",
+    "path": "/icons/files/Babel.svg"
+  },
+  {
+    "title": "Biome",
+    "path": "/icons/files/Biome.svg"
+  },
+  {
+    "title": "BracketsBlue",
+    "path": "/icons/files/BracketsBlue.svg"
+  },
+  {
+    "title": "BracketsGray",
+    "path": "/icons/files/BracketsGray.svg"
+  },
+  {
+    "title": "BracketsGreen",
+    "path": "/icons/files/BracketsGreen.svg"
+  },
+  {
+    "title": "BracketsOrange",
+    "path": "/icons/files/BracketsOrange.svg"
+  },
+  {
+    "title": "BracketsPink",
+    "path": "/icons/files/BracketsPink.svg"
+  },
+  {
+    "title": "BracketsPurple",
+    "path": "/icons/files/BracketsPurple.svg"
+  },
+  {
+    "title": "BracketsRed",
+    "path": "/icons/files/BracketsRed.svg"
+  },
+  {
+    "title": "BracketsSky",
+    "path": "/icons/files/BracketsSky.svg"
+  },
+  {
+    "title": "BracketsYellow",
+    "path": "/icons/files/BracketsYellow.svg"
+  },
+  {
+    "title": "Bruno",
+    "path": "/icons/files/Bruno.svg"
+  },
+  {
+    "title": "Bun",
+    "path": "/icons/files/Bun.svg"
+  },
+  {
+    "title": "C",
+    "path": "/icons/files/C.svg"
+  },
+  {
+    "title": "Capacitor",
+    "path": "/icons/files/Capacitor.svg"
+  },
+  {
+    "title": "Claude",
+    "path": "/icons/files/Claude.svg"
+  },
+  {
+    "title": "Clojure",
+    "path": "/icons/files/Clojure.svg"
+  },
+  {
+    "title": "CloudflareWorkers",
+    "path": "/icons/files/CloudflareWorkers.svg"
+  },
+  {
+    "title": "CMake",
+    "path": "/icons/files/CMake.svg"
+  },
+  {
+    "title": "CodeBlue",
+    "path": "/icons/files/CodeBlue.svg"
+  },
+  {
+    "title": "CodeGray",
+    "path": "/icons/files/CodeGray.svg"
+  },
+  {
+    "title": "CodeGreen",
+    "path": "/icons/files/CodeGreen.svg"
+  },
+  {
+    "title": "CodeOrange",
+    "path": "/icons/files/CodeOrange.svg"
+  },
+  {
+    "title": "CodePink",
+    "path": "/icons/files/CodePink.svg"
+  },
+  {
+    "title": "CodePurple",
+    "path": "/icons/files/CodePurple.svg"
+  },
+  {
+    "title": "CodeRed",
+    "path": "/icons/files/CodeRed.svg"
+  },
+  {
+    "title": "CodeSky",
+    "path": "/icons/files/CodeSky.svg"
+  },
+  {
+    "title": "CodeYellow",
+    "path": "/icons/files/CodeYellow.svg"
+  },
+  {
+    "title": "CoffeeScript",
+    "path": "/icons/files/CoffeeScript.svg"
+  },
+  {
+    "title": "ColdFusion",
+    "path": "/icons/files/ColdFusion.svg"
+  },
+  {
+    "title": "Contentlayer",
+    "path": "/icons/files/Contentlayer.svg"
+  },
+  {
+    "title": "CPlusPlus",
+    "path": "/icons/files/CPlusPlus.svg"
+  },
+  {
+    "title": "Crystal",
+    "path": "/icons/files/Crystal.svg"
+  },
+  {
+    "title": "CSharp",
+    "path": "/icons/files/CSharp.svg"
+  },
+  {
+    "title": "CSV",
+    "path": "/icons/files/CSV.svg"
+  },
+  {
+    "title": "Cucumber",
+    "path": "/icons/files/Cucumber.svg"
+  },
+  {
+    "title": "CUDA",
+    "path": "/icons/files/CUDA.svg"
+  },
+  {
+    "title": "Cursor",
+    "path": "/icons/files/Cursor.svg"
+  },
+  {
+    "title": "Cypress",
+    "path": "/icons/files/Cypress.svg"
+  },
+  {
+    "title": "Dart",
+    "path": "/icons/files/Dart.svg"
+  },
+  {
+    "title": "Database",
+    "path": "/icons/files/Database.svg"
+  },
+  {
+    "title": "Deno",
+    "path": "/icons/files/Deno.svg"
+  },
+  {
+    "title": "Docker",
+    "path": "/icons/files/Docker.svg"
+  },
+  {
+    "title": "Document",
+    "path": "/icons/files/Document.svg"
+  },
+  {
+    "title": "Docusaurus",
+    "path": "/icons/files/Docusaurus.svg"
+  },
+  {
+    "title": "DrawIO",
+    "path": "/icons/files/DrawIO.svg"
+  },
+  {
+    "title": "Drizzle",
+    "path": "/icons/files/Drizzle.svg"
+  },
+  {
+    "title": "DTS",
+    "path": "/icons/files/DTS.svg"
+  },
+  {
+    "title": "Dune",
+    "path": "/icons/files/Dune.svg"
+  },
+  {
+    "title": "Earthfile",
+    "path": "/icons/files/Earthfile.svg"
+  },
+  {
+    "title": "EditorConfig",
+    "path": "/icons/files/EditorConfig.svg"
+  },
+  {
+    "title": "Elixir",
+    "path": "/icons/files/Elixir.svg"
+  },
+  {
+    "title": "Erlang",
+    "path": "/icons/files/Erlang.svg"
+  },
+  {
+    "title": "ESLint",
+    "path": "/icons/files/ESLint.svg"
+  },
+  {
+    "title": "Exe",
+    "path": "/icons/files/Exe.svg"
+  },
+  {
+    "title": "ExpressiveCode",
+    "path": "/icons/files/ExpressiveCode.svg"
+  },
+  {
+    "title": "Firebase",
+    "path": "/icons/files/Firebase.svg"
+  },
+  {
+    "title": "Font",
+    "path": "/icons/files/Font.svg"
+  },
+  {
+    "title": "Fortran",
+    "path": "/icons/files/Fortran.svg"
+  },
+  {
+    "title": "Fresh",
+    "path": "/icons/files/Fresh.svg"
+  },
+  {
+    "title": "FSharp",
+    "path": "/icons/files/FSharp.svg"
+  },
+  {
+    "title": "Func",
+    "path": "/icons/files/Func.svg"
+  },
+  {
+    "title": "Gatsby",
+    "path": "/icons/files/Gatsby.svg"
+  },
+  {
+    "title": "Gear",
+    "path": "/icons/files/Gear.svg"
+  },
+  {
+    "title": "GIF",
+    "path": "/icons/files/GIF.svg"
+  },
+  {
+    "title": "Git",
+    "path": "/icons/files/Git.svg"
+  },
+  {
+    "title": "GitHub",
+    "path": "/icons/files/GitHub.svg"
+  },
+  {
+    "title": "GitLab",
+    "path": "/icons/files/GitLab.svg"
+  },
+  {
+    "title": "Gleam",
+    "path": "/icons/files/Gleam.svg"
+  },
+  {
+    "title": "Go",
+    "path": "/icons/files/Go.svg"
+  },
+  {
+    "title": "GoMod",
+    "path": "/icons/files/GoMod.svg"
+  },
+  {
+    "title": "Gradle",
+    "path": "/icons/files/Gradle.svg"
+  },
+  {
+    "title": "GraphQL",
+    "path": "/icons/files/GraphQL.svg"
+  },
+  {
+    "title": "Gulp",
+    "path": "/icons/files/Gulp.svg"
+  },
+  {
+    "title": "H",
+    "path": "/icons/files/H.svg"
+  },
+  {
+    "title": "Haml",
+    "path": "/icons/files/Haml.svg"
+  },
+  {
+    "title": "Haskell",
+    "path": "/icons/files/Haskell.svg"
+  },
+  {
+    "title": "HTTP",
+    "path": "/icons/files/HTTP.svg"
+  },
+  {
+    "title": "Hugo",
+    "path": "/icons/files/Hugo.svg"
+  },
+  {
+    "title": "I18n",
+    "path": "/icons/files/I18n.svg"
+  },
+  {
+    "title": "Ignore",
+    "path": "/icons/files/Ignore.svg"
+  },
+  {
+    "title": "Image",
+    "path": "/icons/files/Image.svg"
+  },
+  {
+    "title": "Ionic",
+    "path": "/icons/files/Ionic.svg"
+  },
+  {
+    "title": "Java",
+    "path": "/icons/files/Java.svg"
+  },
+  {
+    "title": "JavaScript",
+    "path": "/icons/files/JavaScript.svg"
+  },
+  {
+    "title": "JavaScriptTest",
+    "path": "/icons/files/JavaScriptTest.svg"
+  },
+  {
+    "title": "Jenkins",
+    "path": "/icons/files/Jenkins.svg"
+  },
+  {
+    "title": "Jest",
+    "path": "/icons/files/Jest.svg"
+  },
+  {
+    "title": "Julia",
+    "path": "/icons/files/Julia.svg"
+  },
+  {
+    "title": "JuliaMarkdown",
+    "path": "/icons/files/JuliaMarkdown.svg"
+  },
+  {
+    "title": "Keystatic",
+    "path": "/icons/files/Keystatic.svg"
+  },
+  {
+    "title": "Knip",
+    "path": "/icons/files/Knip.svg"
+  },
+  {
+    "title": "Kotlin",
+    "path": "/icons/files/Kotlin.svg"
+  },
+  {
+    "title": "Laravel",
+    "path": "/icons/files/Laravel.svg"
+  },
+  {
+    "title": "License",
+    "path": "/icons/files/License.svg"
+  },
+  {
+    "title": "Liquid",
+    "path": "/icons/files/Liquid.svg"
+  },
+  {
+    "title": "Lock",
+    "path": "/icons/files/Lock.svg"
+  },
+  {
+    "title": "Lua",
+    "path": "/icons/files/Lua.svg"
+  },
+  {
+    "title": "Luau",
+    "path": "/icons/files/Luau.svg"
+  },
+  {
+    "title": "Lunaria",
+    "path": "/icons/files/Lunaria.svg"
+  },
+  {
+    "title": "Markdoc",
+    "path": "/icons/files/Markdoc.svg"
+  },
+  {
+    "title": "Markdown",
+    "path": "/icons/files/Markdown.svg"
+  },
+  {
+    "title": "MDX",
+    "path": "/icons/files/MDX.svg"
+  },
+  {
+    "title": "Minecraft",
+    "path": "/icons/files/Minecraft.svg"
+  },
+  {
+    "title": "Mongo",
+    "path": "/icons/files/Mongo.svg"
+  },
+  {
+    "title": "Nest",
+    "path": "/icons/files/Nest.svg"
+  },
+  {
+    "title": "NestController",
+    "path": "/icons/files/NestController.svg"
+  },
+  {
+    "title": "NestDecorator",
+    "path": "/icons/files/NestDecorator.svg"
+  },
+  {
+    "title": "NestGuard",
+    "path": "/icons/files/NestGuard.svg"
+  },
+  {
+    "title": "NestMiddleware",
+    "path": "/icons/files/NestMiddleware.svg"
+  },
+  {
+    "title": "NestService",
+    "path": "/icons/files/NestService.svg"
+  },
+  {
+    "title": "Netlify",
+    "path": "/icons/files/Netlify.svg"
+  },
+  {
+    "title": "Next",
+    "path": "/icons/files/Next.svg"
+  },
+  {
+    "title": "Nim",
+    "path": "/icons/files/Nim.svg"
+  },
+  {
+    "title": "Nix",
+    "path": "/icons/files/Nix.svg"
+  },
+  {
+    "title": "Node",
+    "path": "/icons/files/Node.svg"
+  },
+  {
+    "title": "Nodemon",
+    "path": "/icons/files/Nodemon.svg"
+  },
+  {
+    "title": "Notebook",
+    "path": "/icons/files/Notebook.svg"
+  },
+  {
+    "title": "NPM",
+    "path": "/icons/files/NPM.svg"
+  },
+  {
+    "title": "Nunjucks",
+    "path": "/icons/files/Nunjucks.svg"
+  },
+  {
+    "title": "Nuxt",
+    "path": "/icons/files/Nuxt.svg"
+  },
+  {
+    "title": "Nx",
+    "path": "/icons/files/Nx.svg"
+  },
+  {
+    "title": "OCaml",
+    "path": "/icons/files/OCaml.svg"
+  },
+  {
+    "title": "Orval",
+    "path": "/icons/files/Orval.svg"
+  },
+  {
+    "title": "Oxc",
+    "path": "/icons/files/Oxc.svg"
+  },
+  {
+    "title": "Oxlint",
+    "path": "/icons/files/Oxlint.svg"
+  },
+  {
+    "title": "Panda",
+    "path": "/icons/files/Panda.svg"
+  },
+  {
+    "title": "Patch",
+    "path": "/icons/files/Patch.svg"
+  },
+  {
+    "title": "PDF",
+    "path": "/icons/files/PDF.svg"
+  },
+  {
+    "title": "Perl",
+    "path": "/icons/files/Perl.svg"
+  },
+  {
+    "title": "PHP",
+    "path": "/icons/files/PHP.svg"
+  },
+  {
+    "title": "Pkl",
+    "path": "/icons/files/Pkl.svg"
+  },
+  {
+    "title": "PNPM",
+    "path": "/icons/files/PNPM.svg"
+  },
+  {
+    "title": "PostCSS",
+    "path": "/icons/files/PostCSS.svg"
+  },
+  {
+    "title": "Prettier",
+    "path": "/icons/files/Prettier.svg"
+  },
+  {
+    "title": "Prisma",
+    "path": "/icons/files/Prisma.svg"
+  },
+  {
+    "title": "Proto",
+    "path": "/icons/files/Proto.svg"
+  },
+  {
+    "title": "Pug",
+    "path": "/icons/files/Pug.svg"
+  },
+  {
+    "title": "Pulumi",
+    "path": "/icons/files/Pulumi.svg"
+  },
+  {
+    "title": "Puzzle",
+    "path": "/icons/files/Puzzle.svg"
+  },
+  {
+    "title": "Python",
+    "path": "/icons/files/Python.svg"
+  },
+  {
+    "title": "R",
+    "path": "/icons/files/R.svg"
+  },
+  {
+    "title": "Razor",
+    "path": "/icons/files/Razor.svg"
+  },
+  {
+    "title": "React",
+    "path": "/icons/files/React.svg"
+  },
+  {
+    "title": "ReactTest",
+    "path": "/icons/files/ReactTest.svg"
+  },
+  {
+    "title": "ReactTS",
+    "path": "/icons/files/ReactTS.svg"
+  },
+  {
+    "title": "ReduxActions",
+    "path": "/icons/files/ReduxActions.svg"
+  },
+  {
+    "title": "ReduxEffects",
+    "path": "/icons/files/ReduxEffects.svg"
+  },
+  {
+    "title": "ReduxFacade",
+    "path": "/icons/files/ReduxFacade.svg"
+  },
+  {
+    "title": "ReduxReducer",
+    "path": "/icons/files/ReduxReducer.svg"
+  },
+  {
+    "title": "ReduxSelector",
+    "path": "/icons/files/ReduxSelector.svg"
+  },
+  {
+    "title": "ReScript",
+    "path": "/icons/files/ReScript.svg"
+  },
+  {
+    "title": "ReScriptInterface",
+    "path": "/icons/files/ReScriptInterface.svg"
+  },
+  {
+    "title": "Robot",
+    "path": "/icons/files/Robot.svg"
+  },
+  {
+    "title": "Rolldown",
+    "path": "/icons/files/Rolldown.svg"
+  },
+  {
+    "title": "Rome",
+    "path": "/icons/files/Rome.svg"
+  },
+  {
+    "title": "Rsbuild",
+    "path": "/icons/files/Rsbuild.svg"
+  },
+  {
+    "title": "Rslib",
+    "path": "/icons/files/Rslib.svg"
+  },
+  {
+    "title": "Rspack",
+    "path": "/icons/files/Rspack.svg"
+  },
+  {
+    "title": "Ruby",
+    "path": "/icons/files/Ruby.svg"
+  },
+  {
+    "title": "Rust",
+    "path": "/icons/files/Rust.svg"
+  },
+  {
+    "title": "Sanity",
+    "path": "/icons/files/Sanity.svg"
+  },
+  {
+    "title": "Sass",
+    "path": "/icons/files/Sass.svg"
+  },
+  {
+    "title": "SBT",
+    "path": "/icons/files/SBT.svg"
+  },
+  {
+    "title": "Scala",
+    "path": "/icons/files/Scala.svg"
+  },
+  {
+    "title": "Serverless",
+    "path": "/icons/files/Serverless.svg"
+  },
+  {
+    "title": "Shadcn",
+    "path": "/icons/files/Shadcn.svg"
+  },
+  {
+    "title": "Shell",
+    "path": "/icons/files/Shell.svg"
+  },
+  {
+    "title": "Solidity",
+    "path": "/icons/files/Solidity.svg"
+  },
+  {
+    "title": "StatamicAntlers",
+    "path": "/icons/files/StatamicAntlers.svg"
+  },
+  {
+    "title": "Storybook",
+    "path": "/icons/files/Storybook.svg"
+  },
+  {
+    "title": "Stylelint",
+    "path": "/icons/files/Stylelint.svg"
+  },
+  {
+    "title": "Stylus",
+    "path": "/icons/files/Stylus.svg"
+  },
+  {
+    "title": "Supabase",
+    "path": "/icons/files/Supabase.svg"
+  },
+  {
+    "title": "Svelte",
+    "path": "/icons/files/Svelte.svg"
+  },
+  {
+    "title": "SvelteTS",
+    "path": "/icons/files/SvelteTS.svg"
+  },
+  {
+    "title": "SVG",
+    "path": "/icons/files/SVG.svg"
+  },
+  {
+    "title": "Svx",
+    "path": "/icons/files/Svx.svg"
+  },
+  {
+    "title": "SWC",
+    "path": "/icons/files/SWC.svg"
+  },
+  {
+    "title": "Swift",
+    "path": "/icons/files/Swift.svg"
+  },
+  {
+    "title": "Tailwind",
+    "path": "/icons/files/Tailwind.svg"
+  },
+  {
+    "title": "Target",
+    "path": "/icons/files/Target.svg"
+  },
+  {
+    "title": "Tauri",
+    "path": "/icons/files/Tauri.svg"
+  },
+  {
+    "title": "Terraform",
+    "path": "/icons/files/Terraform.svg"
+  },
+  {
+    "title": "TeX",
+    "path": "/icons/files/TeX.svg"
+  },
+  {
+    "title": "Text",
+    "path": "/icons/files/Text.svg"
+  },
+  {
+    "title": "TSConfig",
+    "path": "/icons/files/TSConfig.svg"
+  },
+  {
+    "title": "TSTest",
+    "path": "/icons/files/TSTest.svg"
+  },
+  {
+    "title": "TSTypes",
+    "path": "/icons/files/TSTypes.svg"
+  },
+  {
+    "title": "Turborepo",
+    "path": "/icons/files/Turborepo.svg"
+  },
+  {
+    "title": "Twig",
+    "path": "/icons/files/Twig.svg"
+  },
+  {
+    "title": "TypeScript",
+    "path": "/icons/files/TypeScript.svg"
+  },
+  {
+    "title": "UnoCSS",
+    "path": "/icons/files/UnoCSS.svg"
+  },
+  {
+    "title": "V",
+    "path": "/icons/files/V.svg"
+  },
+  {
+    "title": "VanillaExtract",
+    "path": "/icons/files/VanillaExtract.svg"
+  },
+  {
+    "title": "Vercel",
+    "path": "/icons/files/Vercel.svg"
+  },
+  {
+    "title": "Video",
+    "path": "/icons/files/Video.svg"
+  },
+  {
+    "title": "VisualStudio",
+    "path": "/icons/files/VisualStudio.svg"
+  },
+  {
+    "title": "Vite",
+    "path": "/icons/files/Vite.svg"
+  },
+  {
+    "title": "ViteOld",
+    "path": "/icons/files/ViteOld.svg"
+  },
+  {
+    "title": "Vitest",
+    "path": "/icons/files/Vitest.svg"
+  },
+  {
+    "title": "VitestOld",
+    "path": "/icons/files/VitestOld.svg"
+  },
+  {
+    "title": "Vue",
+    "path": "/icons/files/Vue.svg"
+  },
+  {
+    "title": "Webpack",
+    "path": "/icons/files/Webpack.svg"
+  },
+  {
+    "title": "XML",
+    "path": "/icons/files/XML.svg"
+  },
+  {
+    "title": "YAML",
+    "path": "/icons/files/YAML.svg"
+  },
+  {
+    "title": "Yarn",
+    "path": "/icons/files/Yarn.svg"
+  },
+  {
+    "title": "YummaCSS",
+    "path": "/icons/files/YummaCSS.svg"
+  },
+  {
+    "title": "Zig",
+    "path": "/icons/files/Zig.svg"
+  },
+  {
+    "title": "Zip",
+    "path": "/icons/files/Zip.svg"
+  }
+]
