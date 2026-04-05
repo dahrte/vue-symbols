@@ -12,6 +12,7 @@
   "dependencies": {
     "@hugeicons/core-free-icons": "4.1.1",
     "@hugeicons/vue": "1.0.5",
+    "@nuxt/fonts": "0.14.0",
     "@nuxtjs/color-mode": "4.0.0",
     "@vue-symbols/icons": "workspace:",
     "@vueuse/core": "14.2.1",
