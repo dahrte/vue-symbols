@@ -3,8 +3,7 @@ import { type InputProps, inputVariants } from './variants'
 
 const props = defineProps<InputProps>()
 
-const model = defineModel<string | number>()
-model.value = props.defaultValue
+const model = defineModel<string>()
 </script>
 
 <template>

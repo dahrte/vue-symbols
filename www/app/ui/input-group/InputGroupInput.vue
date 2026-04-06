@@ -11,8 +11,7 @@ const props = withDefaults(defineProps<InputGroupInputProps>(), {
   type: 'text',
 })
 
-const model = defineModel<string | number>()
-model.value = props.defaultValue
+const model = defineModel<string>()
 </script>
 
 <template>

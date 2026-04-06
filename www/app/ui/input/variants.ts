@@ -24,6 +24,5 @@ export interface InputProps {
   disabled?: boolean
   placeholder?: string
   size?: InputVariants['size']
-  defaultValue?: string | number
   class?: HTMLAttributes['class']
 }
