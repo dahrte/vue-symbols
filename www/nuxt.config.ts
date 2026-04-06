@@ -34,6 +34,9 @@ export default defineNuxtConfig({
   experimental: {
     typedPages: true,
   },
+  future: {
+    compatibilityVersion: 5,
+  },
   modules: ['@nuxtjs/color-mode', '@nuxt/fonts', '@vueuse/nuxt'],
   vite: {
     optimizeDeps: {
