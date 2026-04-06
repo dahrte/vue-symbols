@@ -1,9 +1,15 @@
+<script lang="ts">
+interface NotFoundProps {
+  queryInput: string
+}
+</script>
+
 <script setup lang="ts">
 import { ComponentIcon, CryingIcon } from '@hugeicons/core-free-icons'
 
 import { buttonVariants } from '@/ui/button/variants'
 
-const { searchDebounced } = useQueryStore()
+const props = defineProps<NotFoundProps>()
 </script>
 
 <template>
@@ -15,7 +21,7 @@ const { searchDebounced } = useQueryStore()
 
       <EmptyTitle>Not Found</EmptyTitle>
 
-      <EmptyDescription class="wrap-anywhere">No icons match your search for “{{ searchDebounced }}”.</EmptyDescription>
+      <EmptyDescription class="wrap-anywhere">No icons match your search for “{{ queryInput }}”.</EmptyDescription>
     </EmptyHeader>
 
     <EmptyContent>
