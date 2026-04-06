@@ -2,8 +2,8 @@
 import { LinkSquare01Icon } from '@hugeicons/core-free-icons'
 import { NPM, GitHub } from '@vue-symbols/icons/files'
 
-import Figma from '@/components/icons/Figma.vue'
-import VSCode from '@/components/icons/VSCode.vue'
+import Figma from '@/components/misc/Figma.vue'
+import VSCode from '@/components/misc/VSCode.vue'
 import { buttonVariants } from '@/ui/button/variants'
 
 const links = [
@@ -36,7 +36,20 @@ const links = [
       <div class="flex">
         <div class="flex w-full flex-col items-center justify-center gap-4">
           <NuxtLink to="/">
-            <Logo class="size-14" />
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 80 80" class="size-14" aria-hidden="true">
+              <title>Vue Symbols Logo</title>
+              <circle cx="40" cy="40" r="40" fill="#000" />
+              <path fill="#2563EB" d="M61.433 51.345a9.076 9.076 0 11-18.152 0 9.076 9.076 0 0118.152 0z" />
+              <path
+                fill="#0D9488"
+                d="M18.567 24.117a4.538 4.538 0 014.538-4.538h9.076a4.538 4.538 0 014.538 4.538v9.076a4.538 4.538 0 01-4.538 4.538h-9.076a4.538 4.538 0 01-4.538-4.538v-9.076z"
+              />
+              <path fill="#22D3EE" d="M27.643 43.485l9.076 15.72H18.567l9.076-15.72z" />
+              <path
+                fill="#C084FC"
+                d="M48.455 22.295c1.34-3.622 6.463-3.622 7.803 0a4.16 4.16 0 002.458 2.458c3.622 1.34 3.622 6.463 0 7.804a4.16 4.16 0 00-2.458 2.457c-1.34 3.622-6.463 3.622-7.803 0a4.16 4.16 0 00-2.458-2.457c-3.622-1.34-3.622-6.464 0-7.804a4.16 4.16 0 002.458-2.458z"
+              />
+            </svg>
           </NuxtLink>
 
           <div class="flex flex-col items-center gap-4">
