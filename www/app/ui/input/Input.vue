@@ -12,8 +12,8 @@ model.value = props.defaultValue
     v-bind="$attrs"
     v-model="model"
     data-slot="control"
-    :placeholder
-    :disabled
+    :placeholder="placeholder"
+    :disabled="disabled"
     :class="cn(inputVariants({ size }), props.class)"
   />
 </template>

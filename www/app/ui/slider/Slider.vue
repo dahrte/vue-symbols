@@ -33,7 +33,7 @@ const forwarded = useForwardPropsEmits(reactiveOmit(props, 'class'), emits)
 
     <SliderThumb
       v-for="(_, key) in modelValue"
-      :key
+      :key="key"
       :class="[
         'border-border-control relative flex size-4 items-center justify-center rounded-full border bg-white outline-none',
         'focus-visible:border-ring/50 focus-visible:ring-ring/20 dark:focus-visible:ring-ring/40 focus-visible:ring-3',
