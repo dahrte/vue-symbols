@@ -19,7 +19,7 @@
     "@vueuse/nuxt": "14.2.1",
     "clsx": "2.1.1",
     "nuxt": "4.4.2",
-    "reka-ui": "2.9.4",
+    "reka-ui": "2.9.5",
     "tailwind-merge": "3.5.0",
     "tailwind-variants": "3.2.2",
     "vue": "catalog:",
