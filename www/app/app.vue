@@ -2,6 +2,7 @@
 useHead({
   htmlAttrs: {
     lang: 'en',
+    class: 'bg-surface-base font-mono antialiased',
   },
   link: [
     { rel: 'icon', href: '/favicon.ico' },
@@ -9,9 +10,6 @@ useHead({
     { rel: 'icon', href: '/favicon-16x16.png' },
     { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
   ],
-  bodyAttrs: {
-    class: 'bg-surface-base font-mono antialiased',
-  },
 })
 
 useSeoMeta({
