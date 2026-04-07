@@ -30,11 +30,10 @@ const pkgmIcons: Record<string, Component> = {
 
 const packageManager = shallowRef<(typeof commands)[number]>(commands[1]!)
 
-const { copy } = useClipboard()
 const { toast } = useToast()
 
-function handleCopyCommand(command: string, pkgm: string) {
-  copy(`${command} @vue-symbols/icons`)
+async function handleCopyCommand(command: string, pkgm: string) {
+  await navigator.clipboard.writeText(`${command} @vue-symbols/icons`)
 
   toast({
     title: `Copied ${pkgm} command to clipboard`,
