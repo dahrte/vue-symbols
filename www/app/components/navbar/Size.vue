@@ -1,9 +1,5 @@
 <script setup lang="ts">
-const MIN_SIZE = 20
-const MAX_SIZE = 70
-const DEFAULT_SIZE = 40
-
-const { model: sizeQuery } = useGlobalSize(MIN_SIZE, MAX_SIZE, DEFAULT_SIZE)
+const { model: sizeQuery, min, max } = useGlobalSize()
 </script>
 
 <template>
@@ -13,6 +9,6 @@ const { model: sizeQuery } = useGlobalSize(MIN_SIZE, MAX_SIZE, DEFAULT_SIZE)
       <span class="font-mono text-xs tabular-nums">{{ sizeQuery[0] }}px</span>
     </div>
 
-    <Slider v-model="sizeQuery" :min="MIN_SIZE" :max="MAX_SIZE" />
+    <Slider v-model="sizeQuery" :min="min" :max="max" />
   </div>
 </template>

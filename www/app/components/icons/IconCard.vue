@@ -55,12 +55,9 @@ async function handleDownload(path: string) {
 </script>
 
 <template>
-  <div
-    class="border-border-base -mt-px -ml-px flex h-49 flex-col items-center border"
-    :style="{ '--size': `${size}px` }"
-  >
+  <div class="border-border-base -mt-px -ml-px flex h-49 flex-col items-center border">
     <div class="flex flex-1 items-center justify-center">
-      <img :src="path" :alt="title" loading="lazy" decoding="async" class="size-(--size)" />
+      <img :src="path" :alt="title" loading="lazy" decoding="async" :width="size" :height="size" />
     </div>
 
     <div class="w-full py-2 text-center">

@@ -1,6 +1,14 @@
 const SIZE_DEBOUNCE_MS = 300
 
-export function useGlobalSize(min: number, max: number, defaultSize: number) {
+interface GlobalSizeOptions {
+  min?: number
+  max?: number
+  defaultSize?: number
+}
+
+export function useGlobalSize(options: GlobalSizeOptions = {}) {
+  const { min = 20, max = 70, defaultSize = 40 } = options
+
   const route = useRoute()
   const router = useRouter()
 
@@ -48,5 +56,7 @@ export function useGlobalSize(min: number, max: number, defaultSize: number) {
 
   return {
     model: sizeQueryValue,
+    min,
+    max,
   }
 }
