@@ -10,6 +10,8 @@ export default defineNuxtConfig({
     classSuffix: '',
     dataValue: 'theme',
     disableTransition: true,
+    preference: 'dark',
+    storage: 'cookie',
     storageKey: 'theme',
   },
   compatibilityDate: '2026-01-14',
