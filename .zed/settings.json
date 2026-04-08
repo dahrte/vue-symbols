@@ -7,7 +7,7 @@
           "name": "oxfmt"
         }
       },
-      "language_servers": ["tailwindcss-language-server", "oxfmt", "!vscode-css-language-server"],
+      "language_servers": ["tailwindcss-intellisense-css", "!vscode-css-language-server", "..."],
       "prettier": {
         "allowed": false
       }
@@ -41,7 +41,6 @@
           "name": "oxfmt"
         }
       },
-      "language_servers": ["tsgo", "vtsls", "oxlint", "tailwindcss-language-server", "oxfmt"],
       "prettier": {
         "allowed": false
       }
@@ -53,12 +52,22 @@
           "name": "oxfmt"
         }
       },
-      "language_servers": ["tsgo", "vtsls", "oxlint", "tailwindcss-language-server", "oxfmt"],
       "prettier": {
         "allowed": false
       }
     },
     "Vue.js": {
+      "format_on_save": "on",
+      "formatter": {
+        "language_server": {
+          "name": "oxfmt"
+        }
+      },
+      "prettier": {
+        "allowed": false
+      }
+    },
+    "YAML": {
       "format_on_save": "on",
       "formatter": {
         "language_server": {

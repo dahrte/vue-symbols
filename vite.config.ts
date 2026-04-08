@@ -28,6 +28,8 @@ export default defineConfig({
     sortPackageJson: true,
     sortTailwindcss: {
       attributes: [':class', 'class'],
+      functions: ['cn', 'tv'],
+      stylesheet: './www/app/assets/css/global.css',
     },
   },
   staged: {
