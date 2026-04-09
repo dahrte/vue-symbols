@@ -10,13 +10,23 @@ interface IconGridProps {
 <script setup lang="ts">
 const props = defineProps<IconGridProps>()
 
+const route = useRoute()
 const { model: sizeQuery } = useGlobalSize()
+
+const size = computed(() => sizeQuery.value[0]!)
 </script>
 
 <template>
   <NotFound v-if="!icons.length" :query-input="queryInput" />
 
   <div v-else class="-mr-px grid h-fit w-full grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
-    <IconCard v-for="icon in icons" :key="icon.title" :title="icon.title" :path="icon.path" :size="sizeQuery[0]" />
+    <IconCard
+      v-for="icon in icons"
+      :key="icon.path"
+      :title="icon.title"
+      :path="icon.path"
+      :size="size"
+      :type="route.name === 'index' ? 'files' : 'folders'"
+    />
   </div>
 </template>

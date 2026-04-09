@@ -2,7 +2,8 @@
 interface CardProps {
   title: string
   path: string
-  size?: number
+  size: number
+  type: 'files' | 'folders'
 }
 </script>
 
@@ -11,13 +12,10 @@ import { CodeIcon, Copy01Icon, Download01Icon, Svg01Icon, Tick01Icon } from '@hu
 
 const props = defineProps<CardProps>()
 
-const route = useRoute()
 const { toast } = useToast()
 
-async function copyImport() {
-  const type = route.name === 'index' ? 'files' : 'folders'
-
-  await navigator.clipboard.writeText(`import { ${props.title} } from '@vue-symbols/icons/${type}'`)
+async function handleCopyImport() {
+  await navigator.clipboard.writeText(`import { ${props.title} } from '@vue-symbols/icons/${props.type}'`)
 
   toast({
     title: 'Copied import to clipboard',
@@ -26,8 +24,8 @@ async function copyImport() {
   })
 }
 
-async function handleCopySvg(path: string) {
-  const res = await $fetch<Blob>(path)
+async function handleCopySvg() {
+  const res = await $fetch<Blob>(props.path)
   const svg = await res.text()
 
   await navigator.clipboard.writeText(svg)
@@ -39,8 +37,8 @@ async function handleCopySvg(path: string) {
   })
 }
 
-async function handleDownload(path: string) {
-  const res = await $fetch<Blob>(path)
+async function handleDownload() {
+  const res = await $fetch<Blob>(props.path)
   const blob = new Blob([res], { type: 'image/svg+xml' })
 
   const url = URL.createObjectURL(blob)
@@ -64,7 +62,7 @@ async function handleDownload(path: string) {
       <p class="text-sm">{{ title }}</p>
     </div>
 
-    <div class="flex w-full gap-2 border-t border-border-base p-1">
+    <div class="flex w-full flex-wrap gap-1 border-t border-border-base p-1">
       <DropdownMenu>
         <DropdownMenuTrigger as-child>
           <Button size="sm" variant="ghost" class="flex-1">
@@ -74,20 +72,21 @@ async function handleDownload(path: string) {
         </DropdownMenuTrigger>
 
         <DropdownMenuContent>
-          <DropdownMenuItem @select="copyImport">
+          <DropdownMenuItem @select="handleCopyImport">
             <Icon :icon="CodeIcon" aria-hidden="true" />
             <span>Copy import</span>
           </DropdownMenuItem>
 
-          <DropdownMenuItem @select="handleCopySvg(path)">
+          <DropdownMenuItem @select="handleCopySvg">
             <Icon :icon="Svg01Icon" aria-hidden="true" />
             <span>Copy SVG</span>
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
 
-      <Button icon size="sm" variant="ghost" @click="handleDownload(path)">
+      <Button size="sm" variant="ghost" class="flex-1" @click="handleDownload">
         <Icon :icon="Download01Icon" />
+        Download
       </Button>
     </div>
   </div>
