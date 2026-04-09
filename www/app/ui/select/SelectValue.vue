@@ -16,7 +16,7 @@ const forwarded = useForwardProps(reactiveOmit(props, 'class'))
   <div
     data-slot="select-value"
     :class="
-      cn('text-content-strong *:data-placeholder:text-content-muted text-start text-sm/5 select-none', props.class)
+      cn('text-start text-sm/5 text-content-strong select-none *:data-placeholder:text-content-muted', props.class)
     "
   >
     <SelectValue v-bind="forwarded">

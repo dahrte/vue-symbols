@@ -12,6 +12,6 @@ const props = defineProps<DropdownMenuSeparatorProps>()
 <template>
   <DropdownMenuSeparator
     data-slot="dropdown-menu-separator"
-    :class="cn('bg-border-base col-span-full -mx-1 my-1 h-px', props.class)"
+    :class="cn('col-span-full -mx-1 my-1 h-px bg-border-base', props.class)"
   />
 </template>

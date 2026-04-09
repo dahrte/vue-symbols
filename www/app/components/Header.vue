@@ -55,7 +55,7 @@ const links = [
           <div class="flex flex-col items-center gap-4">
             <h1 class="font-sans text-3xl font-semibold tracking-tight lg:text-5xl">Vue-Symbols</h1>
 
-            <span class="text-content-base text-center text-sm text-balance md:text-base">
+            <span class="text-center text-sm text-balance text-content-base md:text-base">
               Beautifully designed file and folder icons to enhance your Vue projects.
             </span>
           </div>

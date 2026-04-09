@@ -33,7 +33,7 @@ const forwarded = useForwardPropsEmits(reactiveOmit(props, 'class'), emits)
       data-slot="tooltip-content"
       :class="
         cn(
-          'border-border-strong/30 bg-surface-hover text-primary z-50 inline-flex w-fit items-center rounded-[10px] border px-2 py-1 text-xs font-medium text-balance select-none',
+          'z-50 inline-flex w-fit items-center rounded-[10px] border border-border-strong/30 bg-surface-hover px-2 py-1 text-xs font-medium text-balance text-primary select-none',
           'data-[state=delayed-open]:animate-in data-[state=delayed-open]:zoom-in-95',
           'data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95',
           props.class,

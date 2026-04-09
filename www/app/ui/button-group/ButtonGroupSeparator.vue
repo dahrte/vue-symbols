@@ -18,7 +18,7 @@ const forwarded = useForwardProps(reactiveOmit(props, ['class']))
     data-slot="button-group-separator"
     :class="
       cn(
-        'bg-border-base relative self-stretch data-[orientation=horizontal]:w-px data-[orientation=vertical]:h-px',
+        'relative self-stretch bg-border-base data-[orientation=horizontal]:w-px data-[orientation=vertical]:h-px',
         props.class,
       )
     "

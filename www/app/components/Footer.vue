@@ -4,7 +4,7 @@
       <div class="flex justify-between">
         <NuxtLink
           to="https://www.miguelsolorio.com/"
-          class="text-content-subtle hover:text-content-strong flex items-center gap-2 text-sm"
+          class="flex items-center gap-2 text-sm text-content-subtle hover:text-content-strong"
         >
           <span class="hidden md:block">Icons crafted by</span>
           <img
@@ -17,7 +17,7 @@
 
         <NuxtLink
           to="https://dahrte.me/"
-          class="text-content-subtle hover:text-content-strong flex items-center gap-2 text-sm"
+          class="flex items-center gap-2 text-sm text-content-subtle hover:text-content-strong"
         >
           <span class="hidden md:block">Developed by</span>
           <img

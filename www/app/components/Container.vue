@@ -18,7 +18,7 @@ const props = withDefaults(defineProps<ContainerProps>(), {
     :is="render"
     :class="
       cn(
-        'border-border-base relative mx-auto px-5 md:max-w-[calc(100vw-2rem)] md:border-x 2xl:max-w-360 dark:border-mauve-700',
+        'relative mx-auto border-border-base px-5 md:max-w-[calc(100vw-2rem)] md:border-x 2xl:max-w-360 dark:border-mauve-700',
         props.class,
       )
     "

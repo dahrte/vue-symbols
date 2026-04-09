@@ -5,7 +5,7 @@ import type { HTMLAttributes } from 'vue'
 export const buttonVariants = tv({
   base: [
     'relative inline-flex shrink-0 items-center justify-center rounded-[10px] border border-transparent bg-clip-border font-medium whitespace-nowrap transition-all outline-none select-none',
-    'will-change-transform active:translate-y-px disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:will-change-transform [&_svg:not([class*="size-"])]:size-4',
+    'active:translate-y-px disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*="size-"])]:size-4',
   ],
   variants: {
     variant: {
@@ -23,7 +23,7 @@ export const buttonVariants = tv({
       ],
       ghost: [
         'border-transparent text-content-base hover:bg-surface-hover hover:text-content-strong',
-        'focus-visible:border-ring/50 focus-visible:ring-3 focus-visible:ring-ring/20',
+        'focus-visible:border-ring/50 focus-visible:ring-3 focus-visible:ring-ring/20 aria-expanded:bg-surface-hover aria-expanded:text-content-strong',
       ],
       destructive: [
         'bg-destructive text-white hover:bg-destructive/90',

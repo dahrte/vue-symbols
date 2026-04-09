@@ -10,7 +10,7 @@ const props = defineProps<SelectItemTextProps>()
 </script>
 
 <template>
-  <div data-slot="select-item-text" :class="cn('text-content-strong text-sm/5', props.class)">
+  <div data-slot="select-item-text" :class="cn('text-sm/5 text-content-strong', props.class)">
     <SelectItemText>
       <slot />
     </SelectItemText>

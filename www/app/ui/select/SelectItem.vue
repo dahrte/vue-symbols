@@ -18,8 +18,8 @@ const forwarded = useForwardProps(reactiveOmit(props, 'class'))
     data-slot="select-item"
     :class="
       cn(
-        'data-highlighted:bg-surface-hover flex items-center gap-2 rounded-md px-2.5 py-1.5 outline-none select-none',
-        '[&_svg]:text-icon-subtle [&_svg]:size-4',
+        'flex items-center gap-2 rounded-md px-2.5 py-1.5 outline-none select-none data-highlighted:bg-surface-hover',
+        '[&_svg]:size-4 [&_svg]:text-icon-subtle',
         props.class,
       )
     "

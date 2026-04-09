@@ -21,7 +21,7 @@ const forwarded = useForwardProps(reactiveOmit(props, ['class', 'size']))
     <SelectIcon as-child>
       <Icon
         :icon="ArrowDown01Icon"
-        class="text-icon-subtle! ml-auto size-4 transition-transform duration-150 ease-in group-data-[state=open]:rotate-180"
+        class="ml-auto size-4 text-icon-subtle! transition-transform duration-150 ease-in group-data-[state=open]:rotate-180"
       />
     </SelectIcon>
   </SelectTrigger>

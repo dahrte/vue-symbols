@@ -28,10 +28,8 @@ const forwarded = useForwardPropsEmits(reactiveOmit(props, 'class'), emits)
       data-slot="dropdown-menu-sub-content"
       :class="
         cn(
-          [
-            'border-border-base bg-surface-base z-50 ml-1 grid w-max origin-(--reka-dropdown-menu-content-transform-origin) grid-cols-[auto_1fr_auto] items-center rounded-[10px] border p-1 shadow-xs outline-none',
-            'data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95',
-          ],
+          'z-50 ml-1 grid w-max origin-(--reka-dropdown-menu-content-transform-origin) grid-cols-[auto_1fr_auto] items-center rounded-[10px] border border-border-base bg-surface-base p-1 shadow-xs outline-none',
+          'data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95',
           props.class,
         )
       "

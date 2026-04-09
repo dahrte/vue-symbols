@@ -14,7 +14,7 @@ const props = defineProps<InputGroupProps>()
     data-slot="input-group"
     :class="
       cn(
-        'border-border-control bg-surface-base relative flex items-center overflow-hidden rounded-[10px] border transition-all',
+        'relative flex items-center overflow-hidden rounded-[10px] border border-border-control bg-surface-base transition-all',
         // Variants based on alignment.
         'has-[>[data-align=inline-start]]:*:data-[slot=input-group-control]:pl-2',
         'has-[>[data-align=inline-end]]:*:data-[slot=input-group-control]:pr-2',

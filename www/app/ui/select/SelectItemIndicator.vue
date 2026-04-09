@@ -21,7 +21,7 @@ const forwarded = useForwardProps(reactiveOmit(props, 'class'))
   <SelectItemIndicator
     v-bind="forwarded"
     data-slot="select-indicator"
-    :class="cn(`[&_svg]:text-icon-base! ml-auto size-4 [&_svg:not([class*='size-'])]:size-4`, props.class)"
+    :class="cn(`ml-auto size-4 [&_svg]:text-icon-base! [&_svg:not([class*='size-'])]:size-4`, props.class)"
   >
     <Icon :icon="Tick02Icon" />
   </SelectItemIndicator>

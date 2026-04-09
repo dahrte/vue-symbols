@@ -4,7 +4,7 @@ const { model: sizeQuery, min, max } = useGlobalSize()
 
 <template>
   <div class="flex h-full flex-1 flex-col justify-center py-4 md:px-5 md:py-0">
-    <div class="text-content-subtle flex items-center justify-between">
+    <div class="flex items-center justify-between text-content-subtle">
       <p class="text-xs font-medium uppercase">Size</p>
       <span class="font-mono text-xs tabular-nums">{{ sizeQuery[0] }}px</span>
     </div>

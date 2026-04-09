@@ -55,7 +55,7 @@ async function handleDownload(path: string) {
 </script>
 
 <template>
-  <div class="border-border-base -mt-px -ml-px flex h-49 flex-col items-center border">
+  <div class="-mt-px -ml-px flex h-49 flex-col items-center border border-border-base">
     <div class="flex flex-1 items-center justify-center">
       <img :src="path" :alt="title" loading="lazy" decoding="async" :width="size" :height="size" />
     </div>
@@ -64,7 +64,7 @@ async function handleDownload(path: string) {
       <p class="text-sm">{{ title }}</p>
     </div>
 
-    <div class="border-border-base flex w-full gap-2 border-t p-1">
+    <div class="flex w-full gap-2 border-t border-border-base p-1">
       <DropdownMenu>
         <DropdownMenuTrigger as-child>
           <Button size="sm" variant="ghost" class="flex-1">
