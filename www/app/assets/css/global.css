@@ -103,3 +103,16 @@
   --font-sans: 'GeistPixelSquare', sans-serif;
   --font-mono: 'Geist Mono', monospace;
 }
+
+@layer base {
+  html {
+    color-scheme: light dark;
+    scrollbar-width: thin;
+    @apply overscroll-y-none bg-surface-base font-mono antialiased;
+  }
+
+  body {
+    font-synthesis-weight: none;
+    text-rendering: optimizeLegibility;
+  }
+}
