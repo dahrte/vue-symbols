@@ -36,8 +36,23 @@ export default defineNuxtConfig({
   experimental: {
     typedPages: true,
   },
-  future: {
-    compatibilityVersion: 5,
+  fonts: {
+    families: [
+      {
+        name: 'Geist Mono',
+        preload: true,
+        src: '/fonts/GeistMono.woff2',
+        style: 'normal',
+        weights: ['100 900'],
+      },
+      {
+        name: 'GeistPixelSquare',
+        preload: true,
+        src: '/fonts/GeistPixel-Square.woff2',
+        style: 'normal',
+        weights: ['400'],
+      },
+    ],
   },
   modules: ['@nuxtjs/color-mode', '@nuxt/fonts', '@vueuse/nuxt'],
   vite: {
