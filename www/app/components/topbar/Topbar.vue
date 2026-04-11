@@ -23,12 +23,12 @@ function toggleTheme() {
 </script>
 
 <template>
-  <nav class="sticky top-0 z-10 bg-surface-base/70 supports-backdrop-filter:backdrop-blur-lg">
+  <div class="sticky top-0 z-10 bg-surface-base/70 supports-backdrop-filter:backdrop-blur-lg">
     <Container class="border-b">
       <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_14rem]">
         <Search placeholder="Search icons..." />
 
-        <div class="relative">
+        <nav class="relative">
           <ul class="flex">
             <li v-for="ap in appRoutes" :key="ap.title" class="flex-1 border-border-base md:border-l md:last:border-r">
               <NuxtLink
@@ -55,7 +55,7 @@ function toggleTheme() {
                 width 150ms ease;
             "
           ></div>
-        </div>
+        </nav>
 
         <div class="flex items-center gap-5 md:gap-0">
           <Size />
@@ -73,5 +73,5 @@ function toggleTheme() {
         </div>
       </div>
     </Container>
-  </nav>
+  </div>
 </template>

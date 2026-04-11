@@ -33,7 +33,7 @@ useSeoMeta({
       <PatternDivider class="h-8 w-full border-b" />
     </Container>
 
-    <Navbar />
+    <Topbar />
 
     <NuxtPage />
 
