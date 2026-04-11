@@ -30,11 +30,7 @@ function toggleTheme() {
 
         <div class="relative">
           <ul class="flex">
-            <li
-              v-for="ap in appRoutes"
-              :key="ap.title"
-              class="flex-1 border-border-base md:border-l md:last:border-r dark:border-mauve-700"
-            >
+            <li v-for="ap in appRoutes" :key="ap.title" class="flex-1 border-border-base md:border-l md:last:border-r">
               <NuxtLink
                 :to="{ path: ap.href, query: route.query }"
                 activeClass="text-content-strong!"
@@ -64,9 +60,7 @@ function toggleTheme() {
         <div class="flex items-center gap-5 md:gap-0">
           <Size />
 
-          <div
-            class="flex h-full items-center justify-center border-border-base md:border-l md:pl-5 dark:border-mauve-700"
-          >
+          <div class="flex h-full items-center justify-center border-border-base md:border-l md:pl-5">
             <Button icon variant="ghost" aria-label="Toggle theme" @click="toggleTheme">
               <Icon
                 v-if="$colorMode.preference === 'dark'"
