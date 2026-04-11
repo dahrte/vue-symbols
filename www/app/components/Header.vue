@@ -63,7 +63,7 @@ const links = [
           <div class="-mx-2 max-w-[calc(100%+1rem)] overflow-x-auto">
             <ul class="flex w-max gap-2 px-2 pb-2">
               <li v-for="link in links">
-                <NuxtLink :to="link.href" :class="buttonVariants({ variant: 'secondary' })">
+                <NuxtLink :to="link.href" target="_blank" :class="buttonVariants({ variant: 'secondary' })">
                   <component :is="link.icon" />
                   {{ link.title }}
                   <Icon :icon="LinkSquare01Icon" />
