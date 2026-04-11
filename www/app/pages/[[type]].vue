@@ -1,19 +1,18 @@
 <script setup lang="ts">
 import { getAllIcons } from '~~/lib/icons'
 
-definePageMeta({
-  validate(route) {
-    const _type = route.params.type
-    if (_type && _type !== 'folders') return false
-    return true
-  },
-})
-
 const route = useRoute()
 const type = route.params.type
-const iconType = type === 'folders' ? 'folders' : 'files'
 
-const rawIcons = getAllIcons(iconType)
+if (type && type !== 'folders') {
+  throw createError({
+    status: 404,
+    statusText: 'Page Not Found',
+    message: 'This page could not be found.',
+  })
+}
+
+const rawIcons = getAllIcons(type === 'folders' ? 'folders' : 'files')
 
 const icons = rawIcons.map((icon) => ({
   ...icon,
