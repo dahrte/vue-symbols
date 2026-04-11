@@ -68,7 +68,11 @@ function toggleTheme() {
             class="flex h-full items-center justify-center border-border-base md:border-l md:pl-5 dark:border-mauve-700"
           >
             <Button icon variant="ghost" aria-label="Toggle theme" @click="toggleTheme">
-              <Icon v-if="$colorMode.value === 'dark'" :icon="Moon02Icon" class="animate-in duration-200 zoom-in-50" />
+              <Icon
+                v-if="$colorMode.preference === 'dark'"
+                :icon="Moon02Icon"
+                class="animate-in duration-200 zoom-in-50"
+              />
               <Icon v-else :icon="Sun03Icon" class="animate-in duration-200 zoom-in-50" />
             </Button>
           </div>
