@@ -61,6 +61,7 @@ export default defineNuxtConfig({
         '@hugeicons/core-free-icons',
         '@hugeicons/vue',
         'clsx',
+        'fast-npm-meta',
         'reka-ui',
         'tailwind-merge',
         'tailwind-variants',

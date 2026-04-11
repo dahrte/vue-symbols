@@ -1,14 +1,16 @@
 <script setup lang="ts">
 import { LinkSquare01Icon } from '@hugeicons/core-free-icons'
-import { NPM, GitHub } from '@vue-symbols/icons/files'
+import { GitHub, NPM } from '@vue-symbols/icons/files'
 
 import Figma from '@/components/misc/Figma.vue'
 import VSCode from '@/components/misc/VSCode.vue'
 import { buttonVariants } from '@/ui/button/variants'
 
+const { data: version } = await useAsyncData('version', () => fetchLatestVersion('@vue-symbols/icons'))
+
 const links = [
   {
-    title: 'v1.0.0',
+    title: `v${version.value || '0.0.0'}`,
     href: 'https://npmx.dev/package/@vue-symbols/icons',
     icon: NPM,
   },
