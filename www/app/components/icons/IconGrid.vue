@@ -19,14 +19,14 @@ const size = computed(() => sizeQuery.value[0]!)
 <template>
   <NotFound v-if="!icons.length" :query-input="queryInput" />
 
-  <div v-else class="-mr-px grid h-fit w-full grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
+  <div v-else class="grid w-full grid-cols-2 gap-2 py-5 sm:grid-cols-4 sm:gap-3 lg:grid-cols-5 xl:grid-cols-6">
     <IconCard
       v-for="icon in icons"
       :key="icon.path"
       :title="icon.title"
       :path="icon.path"
       :size="size"
-      :type="route.name === 'index' ? 'files' : 'folders'"
+      :type="route.params.type === 'folders' ? 'folders' : 'files'"
     />
   </div>
 </template>

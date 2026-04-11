@@ -53,41 +53,41 @@ async function handleDownload() {
 </script>
 
 <template>
-  <div class="-mt-px -ml-px flex h-49 flex-col items-center border border-border-base">
-    <div class="flex flex-1 items-center justify-center">
-      <img :src="path" :alt="title" loading="lazy" decoding="async" :width="size" :height="size" />
-    </div>
-
-    <div class="w-full py-2 text-center">
+  <Card class="flex h-52.5 flex-col">
+    <CardHeader class="px-2">
       <p class="text-sm">{{ title }}</p>
-    </div>
+    </CardHeader>
 
-    <div class="flex w-full flex-wrap gap-1 border-t border-border-base p-1">
-      <DropdownMenu>
-        <DropdownMenuTrigger as-child>
-          <Button size="sm" variant="ghost" class="flex-1">
-            <Icon :icon="Copy01Icon" aria-hidden="true" />
-            Copy
-          </Button>
-        </DropdownMenuTrigger>
+    <CardBody class="flex h-full flex-col p-1">
+      <div class="flex flex-1 items-center justify-center">
+        <img :src="path" :alt="title" loading="lazy" decoding="async" :width="size" :height="size" />
+      </div>
 
-        <DropdownMenuContent>
-          <DropdownMenuItem @select="handleCopyImport">
-            <Icon :icon="CodeIcon" aria-hidden="true" />
-            <span>Copy import</span>
-          </DropdownMenuItem>
+      <div class="flex items-center justify-center gap-1">
+        <DropdownMenu>
+          <DropdownMenuTrigger as-child>
+            <Button icon size="sm" variant="ghost">
+              <Icon :icon="Copy01Icon" aria-hidden="true" />
+            </Button>
+          </DropdownMenuTrigger>
 
-          <DropdownMenuItem @select="handleCopySvg">
-            <Icon :icon="Svg01Icon" aria-hidden="true" />
-            <span>Copy SVG</span>
-          </DropdownMenuItem>
-        </DropdownMenuContent>
-      </DropdownMenu>
+          <DropdownMenuContent>
+            <DropdownMenuItem @select="handleCopyImport">
+              <Icon :icon="CodeIcon" aria-hidden="true" />
+              <span>Copy import</span>
+            </DropdownMenuItem>
 
-      <Button size="sm" variant="ghost" class="flex-1" @click="handleDownload">
-        <Icon :icon="Download01Icon" />
-        Download
-      </Button>
-    </div>
-  </div>
+            <DropdownMenuItem @select="handleCopySvg">
+              <Icon :icon="Svg01Icon" aria-hidden="true" />
+              <span>Copy SVG</span>
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+
+        <Button icon size="sm" variant="ghost" title="Download SVG" @click="handleDownload">
+          <Icon :icon="Download01Icon" />
+        </Button>
+      </div>
+    </CardBody>
+  </Card>
 </template>
