@@ -16,7 +16,7 @@ const props = defineProps<PatternDividerProps>()
   <div
     :class="
       cn(
-        'border-border-base bg-[repeating-linear-gradient(315deg,--alpha(var(--border-base)/50%)_0,--alpha(var(--border-base)/50%)_1px,transparent_0,transparent_50%)] bg-size-[10px_10px]',
+        'border-border-base bg-[repeating-linear-gradient(315deg,var(--border-base)_0,var(--border-base)_1px,transparent_0,transparent_50%)] bg-size-[10px_10px]',
         props.class,
       )
     "
