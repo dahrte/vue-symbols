@@ -16,12 +16,12 @@ useSeoMeta({
   description: 'Symbols VSCode Icons Theme by Miguel Solorio, for Vue.',
   ogTitle: 'Vue-Symbols',
   ogDescription: 'Symbols VSCode Icons Theme by Miguel Solorio, for Vue.',
-  // ogImage: '[og:image]',
-  // ogUrl: '[og:url]',
-  // twitterTitle: '[twitter:title]',
-  // twitterDescription: '[twitter:description]',
-  // twitterImage: '[twitter:image]',
-  // twitterCard: 'summary'
+  ogImage: '/og.png',
+  ogUrl: 'https://vue-symbols.dev',
+  twitterTitle: 'Vue-Symbols',
+  twitterDescription: 'Symbols VSCode Icons Theme by Miguel Solorio, for Vue.',
+  twitterImage: '/og.png',
+  twitterCard: 'summary_large_image',
 })
 </script>
 
