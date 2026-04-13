@@ -1,1 +1,1 @@
-./symbols/README.md
+symbols/README.md
