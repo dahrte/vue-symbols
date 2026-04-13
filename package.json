@@ -5,8 +5,9 @@
   "scripts": {
     "build": "vp run -r build",
     "check": "vp check",
-    "clear": "git clean -fdX node_modules && vp run -r clean",
-    "fix": "vp check --fix"
+    "clean": "git clean -fdX node_modules && vp run -r clean",
+    "fix": "vp check --fix",
+    "release": "vp run @vue-symbols/icons#release"
   },
   "devDependencies": {
     "@types/node": "catalog:",

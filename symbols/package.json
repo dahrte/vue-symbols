@@ -2,37 +2,47 @@
   "name": "@vue-symbols/icons",
   "version": "0.0.0",
   "description": "Symbols icons by Miguel Solorio for Vue.",
-  "homepage": "",
+  "keywords": [
+    "devicons",
+    "icons",
+    "svg",
+    "symbols",
+    "vue"
+  ],
+  "homepage": "https://vue-symbols.dev",
+  "bugs": {
+    "url": "https://github.com/dahrte/vue-symbols/issues"
+  },
   "license": "MIT",
   "author": "dahrte",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/dahrte/vue-symbols.git"
   },
   "files": [
     "dist"
   ],
   "type": "module",
   "sideEffects": false,
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": "./src/index.ts",
     "./files": "./src/files.ts",
-    "./folders": "./src/folders.ts",
-    "./package.json": "./package.json"
+    "./folders": "./src/folders.ts"
   },
   "publishConfig": {
     "access": "public",
     "exports": {
       ".": "./dist/index.js",
       "./files": "./dist/files/index.js",
-      "./folders": "./dist/folders/index.js",
-      "./package.json": "./package.json"
+      "./folders": "./dist/folders/index.js"
     }
   },
   "scripts": {
     "clean": "git clean -fdX dist node_modules src/runtime/files src/runtime/folders src/files.ts src/folders.ts",
     "dev": "vp pack --watch",
-    "prepublishOnly": "vp run build"
+    "prepublishOnly": "vp run build",
+    "release": "bumpp --commit --tag --push"
   },
   "devDependencies": {
     "@types/node": "catalog:",
