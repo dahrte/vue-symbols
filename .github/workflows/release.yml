@@ -27,7 +27,12 @@ jobs:
       - run: vp run build
         working-directory: symbols
 
-      - run: vp pm publish --no-git-checks
+      - run: vp pm publish -- --provenance --no-git-checks
         working-directory: symbols
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Generate changelog
+        run: vp dlx changelogithub
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
