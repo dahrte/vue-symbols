@@ -26,3 +26,5 @@ dist
 
 # AI agent worktrees
 .claude/worktrees/
+
+.wrangler/

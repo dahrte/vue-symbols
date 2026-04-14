@@ -55,6 +55,9 @@ export default defineNuxtConfig({
     ],
   },
   modules: ['@nuxtjs/color-mode', '@nuxt/fonts', '@vueuse/nuxt'],
+  nitro: {
+    preset: 'cloudflare-pages',
+  },
   vite: {
     optimizeDeps: {
       include: [
