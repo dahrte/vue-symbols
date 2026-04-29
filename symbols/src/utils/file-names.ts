@@ -37,6 +37,7 @@ const fileNames: IconMap = {
   'bruno.json': VueSymbol.Bruno,
 
   // Bun
+  bun: VueSymbol.Bun,
   'bun.lock': VueSymbol.Bun,
   'bun.lockb': VueSymbol.Bun,
   'bunfig.toml': VueSymbol.Bun,
@@ -421,10 +422,11 @@ const fileNames: IconMap = {
   'nodemon.json': VueSymbol.Nodemon,
 
   // npm
-  '.npmignore': VueSymbol.NPM,
+  npm: VueSymbol.NPM,
   '.npmrc': VueSymbol.NPM,
-  'package-lock.json': VueSymbol.NPM,
+  '.npmignore': VueSymbol.NPM,
   'package.json': VueSymbol.NPM,
+  'package-lock.json': VueSymbol.NPM,
 
   // Nuxt
   '.nuxtignore': VueSymbol.Nuxt,
@@ -479,6 +481,7 @@ const fileNames: IconMap = {
   '.perl': VueSymbol.Perl,
 
   // pnpm
+  pnpm: VueSymbol.PNPM,
   '.pnpmfile.cjs': VueSymbol.PNPM,
   'pnpm-lock.yaml': VueSymbol.PNPM,
   'pnpm-workspace.yaml': VueSymbol.PNPM,
