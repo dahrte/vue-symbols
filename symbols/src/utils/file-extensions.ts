@@ -46,6 +46,15 @@ const fileExtensions: IconMap = {
   cfc: VueSymbol.ColdFusion,
 
   // Compressed
+  '7z': VueSymbol.Zip,
+  'tar.bz2': VueSymbol.Zip,
+  'tar.gz': VueSymbol.Zip,
+  deb: VueSymbol.Zip,
+  dmg: VueSymbol.Zip,
+  iso: VueSymbol.Zip,
+  rar: VueSymbol.Zip,
+  rpm: VueSymbol.Zip,
+  tar: VueSymbol.Zip,
   zip: VueSymbol.Zip,
 
   // C++
