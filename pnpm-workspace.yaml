@@ -2,8 +2,18 @@ packages:
   - symbols
   - www
 
+savePrefix: ''
+
+allowBuilds:
+  '@parcel/watcher': false
+  esbuild: false
+  vue-demi: false
+
 catalog:
-  '@types/node': 25.6.0
-  'typescript': 6.0.2
-  vite-plus: 0.1.16
-  vue: 3.5.32
+  '@types/node': 26.0.0
+  'typescript': 6.0.3
+  vite-plus: 0.2.1
+  vue: 3.5.38
+
+overrides:
+  vite: 'npm:@voidzero-dev/vite-plus-core@latest'

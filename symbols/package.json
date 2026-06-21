@@ -32,13 +32,13 @@
     "./package.json": "./package.json"
   },
   "publishConfig": {
-    "access": "public",
     "exports": {
       ".": "./dist/index.js",
       "./files": "./dist/files/index.js",
       "./folders": "./dist/folders/index.js",
       "./package.json": "./package.json"
-    }
+    },
+    "access": "public"
   },
   "scripts": {
     "clean": "git clean -fdX dist node_modules src/runtime/files src/runtime/folders src/files.ts src/folders.ts",
@@ -48,7 +48,7 @@
   },
   "devDependencies": {
     "@types/node": "catalog:",
-    "bumpp": "11.0.1",
+    "bumpp": "11.1.0",
     "typescript": "catalog:",
     "vite-plus": "catalog:",
     "vue": "catalog:"
