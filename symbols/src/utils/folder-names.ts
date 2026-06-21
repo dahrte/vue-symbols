@@ -275,6 +275,9 @@ const folderNames: IconMap = {
   // VSCode
   '.vscode': VueSymbol.FolderVSCode,
 
+  // Zed
+  '.zed': VueSymbol.FolderZed,
+
   // Files
   files: VueSymbol.FolderApp,
 }
