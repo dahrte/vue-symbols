@@ -92,6 +92,10 @@ const folderNames: IconMap = {
   font: VueSymbol.FolderFonts,
   fonts: VueSymbol.FolderFonts,
 
+  // Godot
+  '.godot': VueSymbol.FolderGodot,
+  godot: VueSymbol.FolderGodot,
+
   // Git
   '.git': VueSymbol.FolderGitHub,
 
