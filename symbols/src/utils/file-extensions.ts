@@ -138,6 +138,22 @@ const fileExtensions: IconMap = {
   // Gleam
   gleam: VueSymbol.Gleam,
 
+  // Godot
+  'gd.uid': VueSymbol.Link,
+  'gdshader.uid': VueSymbol.Link,
+  'project.godot': VueSymbol.GodotProject,
+  gd: VueSymbol.GodotScript,
+  gdextension: VueSymbol.GodotExtension,
+  gdignore: VueSymbol.GodotIgnore,
+  gdresource: VueSymbol.Resource,
+  gdscene: VueSymbol.Clapper,
+  gdscript: VueSymbol.GodotScript,
+  gdshader: VueSymbol.GodotShader,
+  godot: VueSymbol.GodotProject,
+  scn: VueSymbol.Clapper,
+  tres: VueSymbol.Resource,
+  tscn: VueSymbol.Clapper,
+
   // Go
   go: VueSymbol.Go,
 
