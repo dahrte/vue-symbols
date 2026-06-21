@@ -439,6 +439,9 @@ const fileExtensions: IconMap = {
   // Vue
   vue: VueSymbol.Vue,
 
+  // WebGPU
+  wgsl: VueSymbol.WebGPU,
+
   // XML
   xml: VueSymbol.XML,
   xsl: VueSymbol.XML,
