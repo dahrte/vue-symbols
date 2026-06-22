@@ -1,3 +1,8 @@
 name = "vue-symbols"
 compatibility_date = "2026-04-14"
 compatibility_flags = ["nodejs_compat"]
+
+main = ".output/server/index.mjs"
+
+[assets]
+directory = ".output/public"
