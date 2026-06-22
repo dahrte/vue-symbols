@@ -7,7 +7,9 @@ savePrefix: ''
 allowBuilds:
   '@parcel/watcher': false
   esbuild: false
+  sharp: false
   vue-demi: false
+  workerd: false
 
 catalog:
   '@types/node': 26.0.0
