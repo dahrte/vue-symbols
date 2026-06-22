@@ -25,6 +25,7 @@ export default defineConfig({
     exports: {
       devExports: true,
     },
+    minify: true,
     platform: 'neutral',
     treeshake: true,
   },
