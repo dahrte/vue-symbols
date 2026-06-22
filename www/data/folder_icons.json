@@ -120,6 +120,10 @@
     "path": "/icons/folders/FolderGitLab.svg"
   },
   {
+    "title": "FolderGodot",
+    "path": "/icons/folders/FolderGodot.svg"
+  },
+  {
     "title": "FolderGradle",
     "path": "/icons/folders/FolderGradle.svg"
   },
@@ -362,5 +366,9 @@
   {
     "title": "FolderYellowOutline",
     "path": "/icons/folders/FolderYellowOutline.svg"
+  },
+  {
+    "title": "FolderZed",
+    "path": "/icons/folders/FolderZed.svg"
   }
 ]

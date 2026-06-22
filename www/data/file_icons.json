@@ -96,6 +96,10 @@
     "path": "/icons/files/Capacitor.svg"
   },
   {
+    "title": "Clapper",
+    "path": "/icons/files/Clapper.svg"
+  },
+  {
     "title": "Claude",
     "path": "/icons/files/Claude.svg"
   },
@@ -320,6 +324,26 @@
     "path": "/icons/files/GoMod.svg"
   },
   {
+    "title": "GodotExtension",
+    "path": "/icons/files/GodotExtension.svg"
+  },
+  {
+    "title": "GodotIgnore",
+    "path": "/icons/files/GodotIgnore.svg"
+  },
+  {
+    "title": "GodotProject",
+    "path": "/icons/files/GodotProject.svg"
+  },
+  {
+    "title": "GodotScript",
+    "path": "/icons/files/GodotScript.svg"
+  },
+  {
+    "title": "GodotShader",
+    "path": "/icons/files/GodotShader.svg"
+  },
+  {
     "title": "Gradle",
     "path": "/icons/files/Gradle.svg"
   },
@@ -414,6 +438,10 @@
   {
     "title": "License",
     "path": "/icons/files/License.svg"
+  },
+  {
+    "title": "Link",
+    "path": "/icons/files/Link.svg"
   },
   {
     "title": "Liquid",
@@ -536,10 +564,6 @@
     "path": "/icons/files/Oxc.svg"
   },
   {
-    "title": "Oxlint",
-    "path": "/icons/files/Oxlint.svg"
-  },
-  {
     "title": "Panda",
     "path": "/icons/files/Panda.svg"
   },
@@ -646,6 +670,10 @@
   {
     "title": "ReScriptInterface",
     "path": "/icons/files/ReScriptInterface.svg"
+  },
+  {
+    "title": "Resource",
+    "path": "/icons/files/Resource.svg"
   },
   {
     "title": "Robot",
@@ -832,20 +860,16 @@
     "path": "/icons/files/Vite.svg"
   },
   {
-    "title": "ViteOld",
-    "path": "/icons/files/ViteOld.svg"
-  },
-  {
     "title": "Vitest",
     "path": "/icons/files/Vitest.svg"
   },
   {
-    "title": "VitestOld",
-    "path": "/icons/files/VitestOld.svg"
-  },
-  {
     "title": "Vue",
     "path": "/icons/files/Vue.svg"
+  },
+  {
+    "title": "WebGPU",
+    "path": "/icons/files/WebGPU.svg"
   },
   {
     "title": "Webpack",
